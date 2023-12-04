@@ -1,0 +1,2909 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<title>Manual Essential Accessibility</title>
+
+		<link
+			rel="stylesheet"
+			href="assets/styles/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/styles/sumario.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+	</head>
+	<body>
+		<a
+			href="#main-content"
+			class="skip-link"
+			>Pular para o conteúdo principal</a
+		>
+		<header>
+			<h1>
+				Manual&nbsp; <span lang="en"> Essential Accessibility </span>
+			</h1>
+		</header>
+		<nav>
+			<div style="display: flex; align-items: center">
+				<h2 class="sumario_titulo">Sumário</h2>
+				<button
+					aria-label="Botão exibir ou esconder sumário"
+					onclick="expandirRetrair()"
+					class="btn_sumario"
+				>
+					<span
+						id="btn_icon"
+						class="material-symbols-outlined"
+					>
+						expand_circle_down
+					</span>
+				</button>
+			</div>
+			<ol
+				class="sumario_conteudo"
+				id="sumario"
+			>
+				<li class="sumario_secao">
+					<a
+						href="#topic1"
+						class="sumario_secao_link"
+						>Primeiros Passos</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_primeiros_passos"
+					>
+						<li><a href="#subtopic1_1">Introdução</a></li>
+						<li>
+							<a href="#subtopic1_2">Download e instalação</a>
+						</li>
+						<li>
+							<a href="#subtopic1_3"
+								>Barra de Ferramentas e seus ícones</a
+							>
+						</li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic2"
+						class="sumario_secao_link"
+						>Alternativas para teclado</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_alternativa_teclado"
+					>
+						<li><a href="#subtopic2_1">Teclado virtual</a></li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic3"
+						class="sumario_secao_link"
+						>Alternativas para mouse</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_alternativa_mouse"
+					>
+						<li><a href="#subtopic3_1">Mouse Padrão</a></li>
+						<li><a href="#subtopic3_2">Mouse por movimento</a></li>
+						<li><a href="#subtopic3_3">Mouse XY</a></li>
+						<li><a href="#subtopic3_4">Mouse Radar</a></li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic4"
+						class="sumario_secao_link"
+						>Alternativas de clique</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_alternativa_clique"
+					>
+						<li><a href="#subtopic4_1">Clique Padrão</a></li>
+						<li><a href="#subtopic4_2">Clique Automático</a></li>
+						<li>
+							<a href="#subtopic4_3">Definição Ação de Clique</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic5"
+						class="sumario_secao_link"
+						>Outras ferramentas</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_outras_ferramentas"
+					>
+						<li>
+							<a href="#subtopic5_1">Leitor de Texto do Cursor</a>
+						</li>
+						<li><a href="#subtopic5_2">Comandos de Voz</a></li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic6"
+						class="sumario_secao_link"
+						>Configurações</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_configuracoes"
+					>
+						<li>
+							<a href="#subtopic6_1">Configurações Geral</a>
+						</li>
+						<li>
+							<a href="#subtopic6_2">Configurações Teclado</a>
+						</li>
+						<li>
+							<a href="#subtopic6_3"
+								>Configurações Mouse Padrão</a
+							>
+						</li>
+						<li>
+							<a href="#subtopic6_4"
+								>Configurações Mouse por Movimento</a
+							>
+						</li>
+						<li>
+							<a href="#subtopic6_5">Configurações Mouse XY</a>
+						</li>
+						<li>
+							<a href="#subtopic6_6">Configurações Mouse Radar</a>
+						</li>
+						<li>
+							<a href="#subtopic6_7"
+								>Configurações de Opções de Clique</a
+							>
+						</li>
+						<li>
+							<a href="#subtopic6_8"
+								>Configurações de Leitura (Leitor de Texto do
+								Cursor)</a
+							>
+						</li>
+						<li>
+							<a href="#subtopic6_9"
+								>Configurações de Comandos de Voz</a
+							>
+						</li>
+					</ul>
+				</li>
+
+				<li class="sumario_secao">
+					<a
+						href="#topic7"
+						class="sumario_secao_link"
+						>Apêndice</a
+					>
+					<ul
+						class="sub-menu"
+						id="sum_apendice"
+					>
+						<li><a href="#subtopic7_1">Ícones</a></li>
+						<li><a href="#subtopic7_2">Atalhos</a></li>
+						<li><a href="#subtopic7_3">Comandos</a></li>
+					</ul>
+				</li>
+			</ol>
+		</nav>
+
+		<main id="main-content">
+			<article id="topic1">
+				<section id="subtopic1_1">
+					<h3>Introdução</h3>
+					<p>
+						Disponível para Windows, Mac e Android, o
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>
+						<span lang="en">Accessibility</span> é um aplicativo de
+						tecnologia assistiva que busca auxiliar ao
+						disponibilizar diferentes ferramentas para facilitar a
+						utilização do sistema ou dispositivo no qual é
+						instalado.
+					</p>
+					<p>
+						Esse manual em português segue a versão para Windows da
+						aplicação. A versão utilizada como base é a 1.0.0.122 de
+						2023. Para contato com a equipe de suporte do
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>
+						<span lang="en">Accessibility</span>, que não possui
+						conexão com o grupo responsável por esse manual em
+						português, utilize o email:
+						<a href="mailto:support@essentialaccessibility.com"
+							>support@essentialaccessibility.com</a
+						>
+					</p>
+
+					<p>
+						Entre as funcionalidades principais do
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>
+						<span lang="en">Accessibility</span> estão:
+					</p>
+					<ol>
+						<li>Teclado Virtual</li>
+						<li>Mouse por Movimento</li>
+						<li>Mouse XY</li>
+						<li>Mouse Radar</li>
+						<li>Opções de Cliques</li>
+						<li>
+							Leitor de Texto do Cursor (baseado em posição do
+							mouse)
+						</li>
+						<li>Comandos de Voz (em algumas linguagens)</li>
+					</ol>
+				</section>
+				<section id="subtopic1_2">
+					<h3>Download e Instalação</h3>
+
+					<h4>Requerimentos mínimos:</h4>
+					<ul>
+						<li>
+							Sistema operacional Microsoft Windows 10, Windows 8,
+							Windows 8.1 (o Windows 10 é recomendado)
+						</li>
+						<li>
+							Hardware capaz de funcionar decentemente com a
+							versão do Windows: processador de 1GHz, 1GB de RAM,
+							placa de vídeo DirectX9
+						</li>
+						<li>20MB de espaço livre em seu disco rígido</li>
+						<li>
+							É necessária uma
+							<span lang="en">webcam</span> compatível com o
+							Windows para utilizar o Mouse por Movimento
+						</li>
+						<li>
+							Microfone e alto-falantes são necessários para os
+							comandos de voz e as funcionalidade de leitura,
+							respectivamente
+						</li>
+						<li>
+							É necessária uma conexão com a Internet para
+							instalar o aplicativo
+						</li>
+					</ul>
+
+					<h4>Instruções para Instalação:</h4>
+					<ol>
+						<li>
+							Acesse o link:
+							<a
+								aria-label="Link para download"
+								href="https://www.levelaccess.com/download-app/"
+								target="_blank"
+								>https://www.levelaccess.com/download-app/</a
+							>
+						</li>
+						<li>
+							Escolher qual versão da aplicação você deseja
+							instalar entre Windows, Mac e Android. Para esse
+							tutorial, usaremos a opção Windows.
+						</li>
+						<li>
+							Clicar no botão “<span lang="en">Download</span>”.
+						</li>
+						<li>
+							O contrato de licença de usuário irá aparecer,
+							clicar no “<span lang="en">I agree</span>”.
+						</li>
+						<li>
+							Possivelmente o sistema pedirá para você selecionar
+							onde salvar a aplicação, clicar no “Salvar”.
+						</li>
+						<li>
+							Localize o arquivo cujo download foi feito, o nome
+							padrão é setup.exe, e abra o mesmo.
+						</li>
+						<li>
+							A janela de instalação irá aparecer, clique em
+							instalar e espere a instalação ser concluída.
+						</li>
+					</ol>
+				</section>
+				<section id="subtopic1_3">
+					<h3>Barra de Ferramentas e seus Ícones</h3>
+
+					<p>
+						A aplicação consiste de uma barra de ferramentas que
+						inicialmente aparecerá na parte superior da tela, sendo
+						que a posição dessa barra pode ser alterada nas
+						configurações, a barra contém ícones para ativar
+						determinadas funções da aplicação. Ela pode ser navegada
+						pela tecla “Tab”, porém utilizar essa navegação irá
+						ignorar o ícone de teclado.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID01)Toolbar.PNG"
+							alt="Captura de tela mostrando a Toolbar."
+						/>
+						<figcaption>
+							Captura de tela mostrando a Toolbar.
+						</figcaption>
+					</figure>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de ícones da Toolbar.
+						</caption>
+						<thead>
+							<tr>
+								<th>Ícone</th>
+								<th>Descrição</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img
+										src="images/(ID37)ícone do mouse xy.PNG"
+										alt="Ícone representando o mouse XY"
+									/>
+								</td>
+								<td>Mouse XY</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID38)ícone do mouse radar.PNG"
+										alt="Ícone representando o mouse radar"
+									/>
+								</td>
+								<td>Mouse radar</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID12)Arrastar e soltar.PNG"
+										alt="Ícone representando arrastar e soltar"
+									/>
+								</td>
+								<td>Arrastar e soltar</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID10)Clique direito.PNG"
+										alt="Ícone representando o clique com o botão direito"
+									/>
+								</td>
+								<td>Clique com o botão direito</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID11)Clique duplo.PNG"
+										alt="Ícone representando o clique duplo"
+									/>
+								</td>
+								<td>Clique duplo</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID20)Icone comando de voz.PNG"
+										alt="Ícone representando o comando de voz"
+									/>
+								</td>
+								<td>Comando de voz</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID13)Speech over.PNG"
+										alt="Ícone representando o leitor de textos do cursor"
+									/>
+								</td>
+								<td>Leitor de Texto do Cursor</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID39)ícone de teclado virtual.PNG"
+										alt="Ícone representando o teclado virtual"
+									/>
+								</td>
+								<td>Teclado virtual</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID40)ícone de Configurações.PNG"
+										alt="Ícone representando configurações"
+									/>
+								</td>
+								<td>Configurações</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID41)ícone de Ajuda.PNG"
+										alt="Ícone representando o serviço de ajuda"
+									/>
+								</td>
+								<td>Ajuda</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID42)ícone de sair do aplicativo.PNG"
+										alt="Ícone representando o botão de sair do aplicativo"
+									/>
+								</td>
+								<td>Sair do aplicativo</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>
+						O ícone de “Ajuda” irá abrir uma página web contendo o
+						manual em inglês do
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>&nbsp;<span lang="en">Accessibility</span>. O ícone de
+						“Sair” irá perguntar se você deseja sair do aplicativo
+						e, uma vez confirmado, irá fechar a aplicação. A
+						explicação do funcionamento dos demais ícones poderá ser
+						encontrada nas demais seções deste manual.
+					</p>
+				</section>
+			</article>
+
+			<article id="topic2">
+				<section id="subtopic2_1">
+					<h3>Teclado</h3>
+
+					<p>
+						O
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>&nbsp;<span lang="en">Accessibility</span>
+						apresenta uma alternativa de teclado ao disponibilizar
+						um teclado virtual.
+					</p>
+
+					<h4>O teclado apresenta dois modos:</h4>
+					<ul>
+						<li>
+							Automático: o teclado aparecerá automaticamente
+							quando detectado uma área de entrada de texto e será
+							fechado automaticamente quando selecionado um local
+							fora de sua área ou apertando o botão “X” em um dos
+							cantos do teclado.
+						</li>
+						<li>
+							Manual: o teclado aparece quando dado uma instrução
+							manual para que o mesmo apareça, e apenas será
+							fechado manualmente.
+						</li>
+					</ul>
+
+					<p>
+						O modo automático encontra-se ativado inicialmente,
+						podendo ser alterado nas configurações. Para abrir o
+						teclado automaticamente, basta clicar em uma área que
+						aceite a entrada de texto. O fato do modo automático
+						estar ativado não significa que não se pode usar o modo
+						manual, ambos os modos funcionam simultaneamente.
+					</p>
+
+					<p>
+						Para abrir o teclado no modo manual, pode-se clicar no
+						botão do teclado na barra de ferramentas ou utilizar
+						comandos de voz, dependendo de sua disponibilidade para
+						linguagem.
+					</p>
+
+					<p>
+						Para fechar o teclado, pode-se clicar no botão de fechar
+						“X” no próprio teclado, no botão do teclado na barra de
+						ferramentas ou utilizar comandos de voz.
+					</p>
+
+					<p>
+						Uma vez aberto, o teclado irá aparecer em sua tela e a
+						maioria das teclas irá funcionar de maneira similar a
+						qual o teclado físico funcionaria. Na parte superior do
+						teclado, existem dois botões no lado esquerdo, um “+” e
+						“-” para controlar o tamanho do teclado, e um botão no
+						lado direito, o “X” para fechá-lo.
+					</p>
+
+					<p>
+						Algumas teclas (como “Alt”, “Ctrl” e “Windows”, essa
+						última representada pelo símbolo do Windows) possuem
+						dois modos, o normal e o selecionado. Essas são teclas
+						que costumam necessitar de uma segunda tecla para
+						realizar alguma ação, sendo assim, quando a tecla é
+						pressionada quando em seu modo normal, ela passa para o
+						modo selecionado onde aguarda que outra tecla seja
+						pressionada. Uma vez que uma segunda tecla seja
+						pressionada, ela retorna para o modo normal.
+					</p>
+
+					<p>
+						A tecla “Shift”, representada por uma seta para cima com
+						um círculo próximo, possui três modos: o normal, o
+						selecionado e o bloqueado. O selecionado funciona como o
+						descrito anteriormente, ele aguarda que uma segunda
+						tecla seja pressionada e então retorna ao modo normal. O
+						modo bloqueado age como o “<span lang="en"
+							>Capslock</span
+						>” do teclado, e só irá retornar ao modo normal quando o
+						“Shift” for pressionado novamente.
+					</p>
+
+					<p>
+						A tecla “Sym”, quando pressionada, altera as letras e
+						números apresentados no teclado para mostrar opções de
+						símbolos e vogais acentuadas. Uma vez que ela alterou as
+						teclas, ela muda de “Sym” para “ABC”, pressionando o
+						“ABC” irá alterar as teclas do teclado para apresentar
+						as letras e números novamente.
+					</p>
+
+					<p>
+						Existe também uma tecla para ir para o fim da linha ou
+						dar “Tab”, representada por uma seta apontando para uma
+						linha vertical à sua direita, e uma tecla para apagar
+						tudo, representada por uma espécie de etiqueta colorida
+						com um ‘x’ em seu centro.
+					</p>
+
+					<p>
+						Na sua lateral direita, o teclado apresenta até cinco
+						sugestões de palavras com base nas letras digitadas.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID02)Teclado virtual.PNG"
+							alt="Captura de tela do teclado virtual."
+						/>
+						<figcaption>
+							Captura de tela do teclado virtual.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID03)Teclado virtual - area de sugestoes .PNG"
+							alt="Captura de tela do teclado virtual mostrando sugestões de palavras durante a digitação."
+						/>
+						<figcaption>
+							Captura de tela do teclado virtual mostrando
+							sugestões de palavras durante a digitação.
+						</figcaption>
+					</figure>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Teclado, prossiga para a seção das configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+					<div class="video_caixa">
+						<iframe
+							class="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/ealSGVEx35k?si=5ZsnI4L2q_r6urJw"
+							title="YouTube video Tutorial teclado"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+				</section>
+			</article>
+
+			<article id="topic3">
+				<section id="subtopic3_1">
+					<h3>Mouse Padrão</h3>
+
+					<p>
+						O
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>&nbsp;<span lang="en">Accessibility</span>
+						apresenta funcionalidades para tornar o uso do mouse
+						padrão mais fácil. Essas funcionalidades podem ser
+						ativadas ou desativadas nas configurações.
+					</p>
+
+					<p>
+						De modo padrão, quando um clique é realizado, apresenta
+						um efeito visual na área na qual ocorreu o clique para
+						facilitar a visualização de onde está.
+					</p>
+
+					<p>
+						Para ajudar a localizar a posição do cursor, pode-se
+						ativar a visão XY, na qual será apresentado linhas
+						horizontal e vertical que se encontram na posição do
+						cursor.
+					</p>
+
+					<p>
+						Quando disponível para a linguagem, é possível controlar
+						o mouse por meio de comandos de voz. No modo analógico,
+						os comandos estariam relacionados com qual direção o
+						cursor deveria se movimentar baseado em sua atual
+						localização. No modo digital, com o auxílio da
+						funcionalidade que aplica uma grade 10 por 10 na tela
+						que divide em áreas menores que seriam as células da
+						grade, os comandos estariam relacionados com qual é o
+						código da célula e então o cursor seria colocado no
+						centro da célula escolhida.
+					</p>
+
+					<p>
+						É possível também ativar uma funcionalidade relacionada
+						a clique automático. Com ela ativada, quando o mouse
+						permanecer em um mesmo local sem se movimentar, ele
+						entenderá que deve realizar uma ação de clique naquele
+						local.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Mouse Padrão, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+					<div class="video_caixa">
+						<iframe
+							class="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/IVK5D5kj3pE?si=3Ni1hd6SNIv_y-ef"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+				</section>
+				<section id="subtopic3_2">
+					<h3>Mouse por Movimento</h3>
+
+					<p>
+						O mouse por movimento é uma alternativa de mouse que
+						necessita de uma
+						<span lang="en">webcam</span> para funcionar, o mouse
+						irá se mexer seguindo o movimento captado pela webcam.
+						Dependendo da qualidade da imagem e das condições de
+						iluminação esse mouse pode ter um melhor ou pior
+						desempenho. A <span lang="en">webcam</span> utilizada
+						pode ser alterada nas configurações.
+					</p>
+
+					<p>
+						Para ativar o mouse por movimento, pode-se clicar no
+						ícone referente a esse mouse, utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F4</kbd> ou utilizar comando de
+						voz, dependendo de sua disponibilidade.
+					</p>
+
+					<p>
+						Para desativar esse mouse e retornar para o mouse
+						padrão, pode-se clicar no ícone referente a esse mouse,
+						utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F1</kbd> ou utilizar comando de
+						voz.
+					</p>
+
+					<p>
+						Uma vez que esse mouse seja ativado, ele inicia uma
+						calibração da
+						<span lang="en">webcam</span> abrindo uma janela
+						pequena. A calibração é um processo no qual é definido a
+						área na qual vai haver o foco de detecção de movimento.
+						Para essa etapa, se o modo automático (que é o modo
+						padrão) estiver ativado é necessário que seu rosto
+						esteja diretamente em frente a
+						<span lang="en">webcam</span> para que ele seja
+						detectado e a área de foco definida. Se o modo manual
+						estiver ativado, ação que pode ser realizada nas
+						configurações, você poderá selecionar qual será a área
+						de foco.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID04)calibração.PNG"
+							alt="Captura de tela mostrando o processo de calibração do mouse por movimento."
+						/>
+						<figcaption>
+							Captura de tela mostrando o processo de calibração
+							do mouse por movimento.
+						</figcaption>
+					</figure>
+
+					<p>
+						Uma vez que a calibração é concluída, a janela de
+						calibração é fechada e o logo do
+						<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>&nbsp;<span lang="en">Accessibility</span>
+						presente na barra de ferramentas é substituído por uma
+						área que mostra o que a
+						<span lang="en">webcam</span> está captando. Caso você
+						tenha problemas com a área de foco, é possível calibrar
+						novamente pressionando essa nova área que exibe o vídeo
+						da <span lang="en">webcam</span>.
+					</p>
+
+					<p>
+						O mouse irá começar a se movimentar baseado no movimento
+						realizado dentro da área de foco, esse movimento na área
+						pode ser tanto o da sua cabeça quanto o de um dedo ou
+						outro objeto. Por padrão, para realizar a ação de clicar
+						basta que o mouse por movimento fique parado em um mesmo
+						local por alguns segundos que um clique automático irá
+						acontecer.
+					</p>
+
+					<p>
+						Para posicionar seu cursor no centro da tela, basta
+						balançar sua cabeça duas vezes na horizontal.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Mouse por Movimento, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+					<div class="video_caixa">
+						<iframe
+							class="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/pamGMdxl_wg?si=TqQdm3Tz9OggZSOR"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+				</section>
+				<section id="subtopic3_3">
+					<h3>Mouse XY</h3>
+
+					<p>
+						O mouse XY é uma alternativa de mouse que consiste do
+						escaneamento vertical e horizontal da tela por linhas
+						para determinar onde realizar um clique.
+					</p>
+
+					<p>
+						Para ativar o mouse XY, pode-se clicar no ícone
+						referente a esse mouse, utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F2</kbd> ou utilizar comando de
+						voz, dependendo da disponibilidade.
+					</p>
+
+					<p>
+						Para desativar o mouse XY, pode-se clicar no ícone
+						referente a esse mouse, utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F1</kbd> ou utilizar comando de
+						voz.
+					</p>
+
+					<p>
+						Uma vez que esse mouse seja ativado, uma linha
+						horizontal irá aparecer na tela e movimentar-se
+						verticalmente de cima para baixo em repetição até que um
+						clique esquerdo seja realizado. O clique deve ser feito
+						quando a linha alcançar a posição vertical desejada.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID05)mouse XY linha horizontal.PNG"
+							alt="Captura de tela mostrando a utilização do mouse XY - Linha horizontal"
+						/>
+						<figcaption>
+							Captura de tela mostrando a utilização do mouse XY -
+							Linha horizontal
+						</figcaption>
+					</figure>
+
+					<p>
+						A linha anterior fica fixada na posição determinada e
+						uma nova linha vertical aparecerá e irá se mover
+						horizontalmente da esquerda para a direita em repetição.
+						Quando a linha alcançar a posição horizontal necessária,
+						basta realizar um clique. Uma vez que a linha horizontal
+						e a vertical vão estar cruzando uma outra, ocorrerá um
+						clique na área onde elas se encontram.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID06)mouse XY linha vertical.png"
+							alt="Captura de tela mostrando a utilização do mouse XY - Linha vertical"
+						/>
+						<figcaption>
+							Captura de tela mostrando a utilização do mouse XY -
+							Linha vertical
+						</figcaption>
+					</figure>
+
+					<p>
+						Existe um certo atraso entre o clique realizado na
+						intersecção das linhas e o escaneamento voltar para o
+						início, esse atraso existe para caso seja necessário
+						mais de um clique em uma mesma posição. É possível
+						alterar a velocidade do movimento das linhas e o tempo
+						do atraso do clique nas configurações.
+					</p>
+
+					<p>
+						Caso você tenha perdido a posição correta vertical ou
+						horizontal, você pode esperar a linha finalizar todo o
+						percurso da tela e retornar, ou dar um clique direito
+						para que a linha percorra na direção inversa.
+					</p>
+
+					<p>
+						Esse mouse também funciona com o teclado virtual. Quando
+						utilizando esse mouse com o teclado, ele irá percorrer
+						apenas a área do teclado para facilitar a digitação das
+						teclas sem percorrer áreas desnecessárias da tela.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Mouse XY, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+					<div class="video_caixa">
+						<iframe
+							class="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/TrgOt2_rSMs?si=FUf1rR7QKFZUdrLx"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+				</section>
+				<section id="subtopic3_4">
+					<h3>Mouse Radar</h3>
+
+					<p>
+						O mouse radar é uma alternativa de mouse que consiste de
+						uma dinâmica similar ao do mouse XY, onde, invés de
+						escanear verticalmente e horizontalmente, ele escaneia a
+						tela de maneira circular.
+					</p>
+
+					<p>
+						Para ativar o mouse radar, pode-se clicar no ícone
+						referente a esse mouse, utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F5</kbd> ou utilizar comando de
+						voz, dependendo da disponibilidade.
+					</p>
+
+					<p>
+						Para desativar o mouse radar, pode-se clicar no ícone
+						referente a esse mouse, utilizar o atalho
+						<kbd>Ctrl</kbd> + <kbd>F1</kbd> ou utilizar comando de
+						voz.
+					</p>
+
+					<p>
+						Uma vez que esse mouse seja ativado, existem dois pontos
+						de referência que podem ser usados: o canto superior
+						esquerdo, que é a opção padrão, e o centro da tela.
+						Independente de qual seja o ponto de referência,
+						aparecerá uma linha partindo desse ponto que fará um
+						movimento circular pela tela em repetição. Uma vez que
+						essa linha estiver na posição desejada, basta realizar
+						um clique esquerdo e ela será fixada.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID07)mouse radar com ponto de referência no canto _ no centro.png"
+							alt="Captura de tela mostrando o mouse radar com ponto de referência no canto e no centro."
+						/>
+						<figcaption>
+							Captura de tela mostrando o mouse radar com ponto de
+							referência no canto e no centro.
+						</figcaption>
+					</figure>
+
+					<p>
+						Com a linha fixada, uma área circular irá percorrer a
+						linha do ponto de referência até o fim da tela em
+						repetição. Quando esse círculo chegar no local desejado,
+						basta realizar um clique. Nesse local que o círculo
+						parou será realizado o clique.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID08)mouse radar linha selecionada e círculo percorrendo.png"
+							alt="Captura de tela mostrando o mouse radar com a linha selecionada e o círculo percorrendo a linha."
+						/>
+						<figcaption>
+							Captura de tela mostrando o mouse radar com a linha
+							selecionada e o círculo percorrendo a linha.
+						</figcaption>
+					</figure>
+
+					<p>
+						Existe um certo atraso entre o clique realizado e o
+						escaneamento voltar para o início, esse atraso existe
+						caso seja necessário mais de um clique nessa mesma
+						posição. É possível também alterar o tempo do atraso do
+						clique e a velocidade do movimento da linha e do círculo
+						nas configurações.
+					</p>
+
+					<p>
+						Caso você tenha perdido a posição correta para linha ou
+						círculo, você pode esperar eles finalizarem todo o seu
+						percurso na tela e retornar, ou dar um clique direito
+						para que a linha ou círculo percorra na direção inversa.
+					</p>
+
+					<p>
+						Esse mouse também funciona com o teclado virtual. Quando
+						utilizando esse mouse com o teclado, ele irá percorrer
+						apenas a área do teclado para facilitar a digitação das
+						teclas sem percorrer áreas desnecessárias da tela.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Mouse Radar, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+					<div class="video_caixa">
+						<iframe
+							class="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/ay0mgoypcxY?si=FxvBtPpcfOoulmMJ"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+				</section>
+			</article>
+
+			<article id="topic4">
+				<section id="topic-content">
+					<h3>Cliques</h3>
+					<p>
+						Quando o assunto são os cliques existem duas
+						considerações importantes a serem feitas: como realizar
+						um clique (identificação do dispositivo que está sendo
+						usado) e que tipo de clique deve ser executado (clique
+						com o botão esquerdo, clique com o botão direito, clique
+						duplo ou arrastar e soltar).
+					</p>
+
+					<p>
+						Esta aplicação aceita a utilização de diferentes
+						dispositivos para cliques (mouse,
+						<span lang="en">switch</span>, outros programas, etc.).
+						Além disso, possui recursos de clique através de comando
+						de voz (quando disponível para a linguagem selecionada)
+						e de clique automático, que permite você clicar
+						simplesmente ao posicionar o cursor na área desejada por
+						alguns segundos.
+					</p>
+				</section>
+				<section id="subtopic4_1">
+					<h3>Dispositivo Padrão de Clique</h3>
+
+					<p>
+						Ao utilizar um dispositivo para cliques( mouses comuns,
+						<span lang="en">switches</span> modificados, controles,
+						etc.), a aplicação permite que o clique seja efetuado ao
+						pressionar o botão, em vez de soltá-lo, como é o padrão.
+						No entanto, é importante observar que ao optar por essa
+						configuração, não será possível executar a ação de
+						arrastar e soltar da maneira convencional. Em vez disso,
+						será necessário usar os botão de ação de clique
+						"Arrastar e soltar", conforme explicado na subseção
+						"Seleção de Ação de Clique".
+					</p>
+
+					<p>
+						Sendo útil para usuários que podem ter mais dificuldades
+						em controlar a ação de soltar o clique do que a ação de
+						pressionar. É possível realizar essa troca nas
+						configurações.
+					</p>
+				</section>
+				<section id="subtopic4_2">
+					<h3>Clique Automático</h3>
+
+					<p>
+						O clique automático realiza um clique quando você pausa
+						o cursor na posição desejada por alguns segundos. Devido
+						à sua natureza, o clique automático só pode ser ativado
+						ao usar um sistema em que você controla diretamente a
+						posição do cursor, como, por exemplo, o mouse padrão e o
+						mouse por movimento. Assim, não é possível utilizar essa
+						funcionalidade em conjunto com o mouse radar ou o mouse
+						XY.
+					</p>
+
+					<p>
+						Para utilizar essa função, ela deve ser ativada nas
+						configurações, estando, por padrão, desativada para
+						opções de mouse convencional e ativada para o mouse por
+						movimento.
+					</p>
+
+					<p>
+						Quando o clique automático está ativado, um botão de
+						pausa aparece ao lado dos botões de ação de clique. Se
+						você clicar nele, o clique automático será pausado, e
+						nenhum outro clique será realizado, transformando o
+						botão em um botão de reprodução. Também é possível
+						pausar o clique automático utilizando o comando de voz.
+					</p>
+
+					<p>
+						A opção de pausar pode ser útil quando você estiver
+						envolvido em uma atividade prolongada que não exija
+						interação, como ler um texto ou assistir a um vídeo, e
+						você não quer ser incomodado por cliques indesejados.
+						Para reativar o clique automático, basta posicionar o
+						cursor sobre o botão
+						<span lang="en">"play"</span> (o botão de reprodução) e
+						aguardar pelo tempo de um clique, sendo possível também
+						ativá-lo via comando de voz. É importante destacar que
+						quando o clique automático está pausado, ele continuará
+						respondendo no botão de pausa/play, mesmo que não
+						funcione em nenhum outro lugar. Portanto, evite
+						descansar o cursor sobre esse botão, pois a aplicação
+						alternará entre pausa e
+						<span lang="en">"play"</span> sempre que o tempo de
+						clique for atingido.
+					</p>
+
+					<p>
+						Nas configurações, é possível ajustar o tempo de espera
+						antes do clique, a tolerância de movimento para
+						determinar se o cursor se moveu ou não, a capacidade de
+						realizar múltiplos cliques no mesmo local e a opção de
+						utilizar seu dispositivo de clique em conjunto com o
+						clique automático.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Clique Automático, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+				</section>
+				<section id="subtopic4_3">
+					<h3>Seleção de Ação de Clique</h3>
+					<p>
+						A aplicação permite que você execute vários tipos de
+						cliques necessários para diferentes objetivos, como o
+						clique duplo, o clique com o botão direito e o arrastar
+						e soltar. Caso esteja utilizando um
+						<span lang="en">switch</span> de clique único ou a
+						ferramenta de clique automático, seria difícil realizar
+						essas ações sem tais opções.
+					</p>
+
+					<p>
+						Para realizar uma ação de clique diferente do clique com
+						o botão esquerdo, selecione a ação de clique clicando no
+						botão correspondente da barra de ferramentas (por
+						padrão, ela fica na parte superior da tela). O botão
+						selecionado fica, então, ativado, e em seguida, você
+						apenas precisa clicar onde deseja.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID09)toolbar com os ícones de ação de mouse destacados.PNG"
+							alt="Captura de tela da Toolbar com os ícones de ação do mouse destacados."
+						/>
+						<figcaption>
+							Captura de tela da Toolbar com os ícones de ação do
+							mouse destacados.
+						</figcaption>
+					</figure>
+
+					<p>
+						Por exemplo, caso esteja utilizando o mouse por
+						movimento e precise realizar um clique com o botão
+						direito ou um clique duplo, primeiro vá até o botão
+						"Clique direito" na barra de ferramentas
+						<span
+							id="ID10"
+							class="icon-image"
+							><img
+								src="images/(ID10)Clique direito.PNG"
+								alt="Ícone represetnando o clique com o botão direito do mouse."
+						/></span>
+						ou até o botão "Clique duplo"
+						<span
+							id="ID11"
+							class="icon-image"
+							><img
+								src="images/(ID12)Arrastar e soltar.PNG"
+								alt="Ícone representando arrastar e soltar." /></span
+						>, conforme seja sua necessidade, e clique nele. Em
+						seguida, seu próximo clique terá o efeito do botão
+						selecionado. Após a execução do clique de ação, a
+						configuração é automaticamente redefinida, fazendo com
+						que o próximo clique retorne ao padrão de clique com o
+						botão esquerdo do mouse.
+					</p>
+
+					<p>
+						É bom ressaltar que a opção "arrastar e soltar" afeta os
+						dois cliques seguintes, esta funcionalidade é
+						representada pelo ícone
+						<span
+							id="ID12"
+							class="icon-image"
+							>[IMAGEM do ícone de arrastar e soltar]</span
+						>. Primeiro, selecione a opção "arrastar e soltar";
+						deste modo o clique subsequente selecionará o item e
+						iniciará o processo de arrastá-lo para onde desejar. Em
+						seguida, seu próximo clique encerrará o processo de
+						"arrastar e soltar". Após a conclusão da ação, a
+						configuração é automaticamente redefinida para o clique
+						com o botão esquerdo, conforme o padrão.
+					</p>
+
+					<p>
+						Você pode realizar qualquer uma dessas ações utilizando
+						qualquer substituto de mouse, incluindo o mouse padrão,
+						mouse radar, mouse XY e programas que realizem cliques.
+						Sendo possível também utilizá-las através do comando de
+						voz, mas tenha em mente que existe um pequeno atraso
+						entre a fala e a ativação do comando que deve ser levado
+						em conta quando utilizando alguma opção de mouse que o
+						deixe em movimento, conforme você for utilizando a
+						aplicação você irá se acostumar e entender quanto antes
+						deve falar para que não possua problemas.
+					</p>
+
+					<p>
+						Para entender os demais comandos disponíveis para seu
+						uso dos “Comandos de Voz” nas “Ações de clique”,
+						prossiga para a seção de Lista de Comandos.
+						<a href="#topic7"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+				</section>
+			</article>
+
+			<article id="topic5">
+				<section id="subtopic5_1">
+					<h3>Leitor de Texto do Cursor</h3>
+					<p>
+						A barra de ferramentas oferece a funcionalidade de
+						leitura de texto sobre o cursor, que permite que você
+						ouça a descrição da tela do que está abaixo do cursor.
+					</p>
+
+					<p>
+						A função de leitura pode ser ativada ou desativada ao
+						clicar no botão de leitura na barra de ferramentas,
+						representado pelo ícone
+						<span
+							id="ID13"
+							class="speech-icon"
+							><img
+								src="images/(ID13)Speech over.PNG"
+								alt="Ícone representando o leitor de textos do cursor." /></span
+						>, ou utilizando os comandos de voz, quando disponíveis
+						para a linguagem.
+					</p>
+
+					<p>
+						Essa função só está disponível se você possuir o
+						mecanismo de “Texto para fala” habilitado em seu
+						computador. Veja a subseção “Como configurar o leitor de
+						texto”.
+					</p>
+
+					<p>
+						Esta funcionalidade é como um simples leitor de tela.
+						Através dela o texto sob o cursor é lido para você ao
+						parar ele por um período de 0.5 a 1 segundo.
+					</p>
+
+					<p>
+						Quando o texto é lido, ele é também demarcado por um
+						pequeno contorno colorido para que você possa saber o
+						que está sendo lido.
+					</p>
+
+					<p>
+						O texto lido é provido pela aplicação pela qual você
+						está navegando, atualmente a maioria das aplicações se
+						preocupam em fornecer informações corretas mas ainda é
+						possível que não o façam, então cuidado é necessário.
+					</p>
+
+					<h4>Como Configurar o Leitor de Texto do Cursor</h4>
+
+					<p>
+						As funcionalidades do leitor de texto podem ser
+						configuradas abrindo a aba "Leitura" nas configurações.
+						A opção "Voz" permite que você selecione qual voz será
+						utilizada para a leitura dos elementos. Escolha a
+						preferida da lista.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID14)Configuração “VOZ” do aplicativo.png"
+							alt="Captura de tela mostrando a configuração 'Voz' do aplicativo."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração 'Voz' do
+							aplicativo.
+						</figcaption>
+					</figure>
+
+					<p>
+						Se desejar adicionar mais vozes, clique no botão "Abra a
+						janela de configuração do Windows", vá para a área
+						"Idiomas preferidos" e clique em "Adicionar um idioma".
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID15)janela de IDIOMA do windows p1.png"
+							alt="Captura de tela mostrando a janela 'Idioma' do Windows."
+						/>
+						<figcaption>
+							Captura de tela mostrando a janela 'Idioma' do
+							Windows.
+						</figcaption>
+					</figure>
+
+					<p>
+						Nesse ponto, você poderá escolher o pacote de idioma que
+						deseja baixar. Para que o idioma baixado seja adicionado
+						ao aplicativo, é importante selecionar um que inclua a
+						opção "Conversão de texto em fala" (isso pode ser
+						verificado pela presença do símbolo
+						<span
+							id="ID16"
+							class="speech-icon"
+							><img
+								src="images/(ID16)símbolo de conversão de texto em fala.PNG"
+								alt="Ícone representando o símbolo de conversão de texto em fala."
+						/></span>
+						ao lado do nome da língua). Após selecionar a linguagem,
+						clique em avançar e, em seguida, em instalar. Após a
+						conclusão da instalação, reinicie o aplicativo e o novo
+						pacote de voz aparecerá na lista de opções.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID17)janela de instalação de novo idioma p2.PNG"
+							alt="Captura de tela mostrando a instalação de um novo idioma."
+						/>
+						<figcaption>
+							Captura de tela mostrando a instalação de um novo
+							idioma.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID18)janela de instalação de novo idioma - idioma selecionado p3.PNG"
+							alt="Captura de tela mostrando o idioma a ser instalado selecionado."
+						/>
+						<figcaption>
+							Captura de tela mostrando o idioma a ser instalado
+							selecionado.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID19)janela de instalação de novo idioma - depois de clicar em avançar p4.PNG"
+							alt="Captura de tela mostrando a instalação de um novo idioma após clicar em 'Avançar'."
+						/>
+						<figcaption>
+							Captura de tela mostrando a instalação de um novo
+							idioma após clicar em 'Avançar'.
+						</figcaption>
+					</figure>
+
+					<p>
+						A opção "Volume" permite que você controle o volume da
+						leitura em relação ao volume do seu áudio. O padrão é
+						100%, o que significa que está no mesmo volume que o
+						dispositivo de áudio. Se você definir o volume para 50%,
+						a voz terá metade do volume de outras fontes de áudio,
+						como filmes ou músicas. Não é possível aumentar o volume
+						para mais de 100%; se desejar aumentá-lo, ajuste o
+						volume no seu sistema de áudio.
+					</p>
+
+					<p>
+						A opção "velocidade de leitura" se refere à rapidez com
+						que a voz lerá o texto. O valor padrão "50" corresponde
+						à velocidade de fala padrão. Aumente ou diminua este
+						valor para ajustar a velocidade da leitura.
+					</p>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso do Leitor de Texto do Cursor, prossiga para a seção
+						das configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+				</section>
+				<section id="subtopic5_2">
+					<h3>Comandos de Voz</h3>
+
+					<p>
+						O programa também pode ser controlado por comandos de
+						voz, se você tiver uma ferramenta compatível de
+						reconhecimento de voz. Esses comandos são projetados
+						para controlar exclusivamente as funções do "<span
+							aria-label="essential"
+							lang="en"
+							>eSSENTIAL</span
+						>&nbsp;<span lang="en"
+							>Accessibility Windows Application</span
+						>" e não funcionam com as funções de outros programas.
+					</p>
+
+					<p>
+						Os comandos de voz podem ser habilitados ou
+						desabilitados ao clicar no botão "Comando de Voz",
+						representado pelo ícone
+						<span
+							id="ID20"
+							class="voice-command-icon"
+							><img
+								src="images/(ID20)Icone comando de voz.PNG"
+								alt="Ícone representando o comando de voz."
+						/></span>
+						na barra de ferramentas. Quando habilitado, o ícone do
+						comando é destacado.
+					</p>
+
+					<p>
+						Se o seu sistema não possuir uma ferramenta de
+						reconhecimento de fala para o idioma que você estiver
+						usando, então o botão não estará presente (esta opção
+						não é compatível com o idioma português, mas está
+						disponível para inglês e espanhol).
+					</p>
+
+					<p>
+						Caso esteja utilizando o programa em português e deseje
+						usar os comandos de voz, será necessário fazer a troca
+						do idioma da aplicação para algum idioma que suporte
+						essa função. Isso pode ser feito na aba "Geral" do menu
+						de configurações.
+					</p>
+
+					<h4>Configurando Comandos de Voz</h4>
+
+					<p>
+						Os comandos de voz podem ser configurados ao abrir a aba
+						"Comandos de Voz" nas configurações. Se você tiver pelo
+						menos uma ferramenta de reconhecimento de fala
+						disponível para o seu idioma atual, você pode
+						selecioná-la na lista de "Ferramentas de Reconhecimento
+						de Voz". No entanto, é importante reiterar que a
+						aplicação não é compatível com o português,
+						impossibilitando o uso de comandos de voz neste idioma
+						mesmo que possua a ferramenta de reconhecimento de fala.
+					</p>
+
+					<p>
+						O processo para adicionar uma ferramenta de
+						reconhecimento de fala é semelhante ao de adição de voz,
+						conforme visto na subseção “Como Configurar o Leitor de
+						Texto do Cursor” da seção
+						<a href="#subtopic5_1">“Leitor de Texto do Cursor”</a>.
+					</p>
+
+					<p>
+						Para realizar a adição, você precisará acessar a aba
+						"Leitura" no menu de configurações da aplicação, clicar
+						no botão "Abra a janela de configuração do Windows", ir
+						para a área "Idiomas preferidos" e clicar em "Adicionar
+						um idioma". Nesse ponto, você poderá escolher o pacote
+						de idioma que deseja baixar.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID15)janela de IDIOMA do windows p1.png"
+							alt="Captura de tela mostrando a janela 'Idioma' do Windows."
+						/>
+						<figcaption>
+							Captura de tela mostrando a janela 'Idioma' do
+							Windows.
+						</figcaption>
+					</figure>
+
+					<p>
+						Para que o idioma baixado seja adicionado ao aplicativo,
+						é importante selecionar um que inclua a opção
+						"Reconhecimento de Fala" (isso pode ser verificado pela
+						presença do símbolo
+						<span
+							id="ID21"
+							class="voice-command-icon"
+							><img
+								src="images/(ID21)símbolo Reconhecimento de fala.PNG"
+								alt="Ícone representando o reconhecimento de fala."
+						/></span>
+						ao lado do nome da língua). Após selecionar o idioma,
+						clique em avançar e, em seguida, em instalar. Após a
+						conclusão da instalação, reinicie o aplicativo e o novo
+						pacote de voz aparecerá na lista de opções. Lembrando
+						que será necessário fazer a troca do idioma da aplicação
+						para algum idioma que suporte essa função. Isso pode ser
+						feito na aba "Geral" do menu de configurações.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID17)janela de instalação de novo idioma p2.PNG"
+							alt="Captura de tela mostrando a instalação de um novo idioma."
+						/>
+						<figcaption>
+							Captura de tela mostrando a instalação de um novo
+							idioma.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID18)janela de instalação de novo idioma - idioma selecionado p3.PNG"
+							alt="Captura de tela mostrando o idioma a ser instalado selecionado."
+						/>
+						<figcaption>
+							Captura de tela mostrando o idioma a ser instalado
+							selecionado.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID19)janela de instalação de novo idioma - depois de clicar em avançar p4.PNG"
+							alt="Captura de tela mostrando a instalação de um novo idioma após clicar em 'Avançar'."
+						/>
+						<figcaption>
+							Captura de tela mostrando a instalação de um novo
+							idioma após clicar em 'Avançar'.
+						</figcaption>
+					</figure>
+
+					<p>
+						Para entender as demais opções de customização do seu
+						uso dos “Comandos de Voz”, prossiga para a seção das
+						configurações.
+						<a href="#topic6"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+
+					<p>
+						Para entender os demais comandos disponíveis para seu
+						uso dos “Comandos de Voz”, prossiga para a seção de
+						Lista de Comandos.
+						<a href="#topic7"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+				</section>
+			</article>
+
+			<article id="topic6">
+				<section id="subtopic6_1">
+					<h3>Configurações Gerais</h3>
+
+					<figure>
+						<img
+							src="images/(ID22)configuração geral.png"
+							alt="Captura de tela mostrando a tela de configurações gerais."
+						/>
+						<figcaption>
+							Captura de tela mostrando a tela de configurações
+							gerais.
+						</figcaption>
+					</figure>
+
+					<h4>Idioma</h4>
+					<p>
+						Você pode selecionar em qual idioma você gostaria que o
+						eSSENTIAL Accessibility esteja. Por padrão, ele irá
+						iniciar com o idioma do seu sistema se possível, caso
+						não seja possível o padrão será o Inglês/English.
+					</p>
+
+					<h4>Posição da barra de ferramentas</h4>
+					<p>
+						Você pode selecionar onde gostaria que a barra de
+						ferramentas fique entre as bordas de cima, baixo,
+						esquerda ou direita. Por padrão, a barra estará
+						localizada na parte de cima da tela.
+					</p>
+
+					<h4>Substitutos de mouse ativado na inicialização</h4>
+					<p>
+						Você pode selecionar qual mouse estará ativado quando o
+						eSSENTIAL Accessibility for iniciado entre o mouse comum
+						e as alternativas de mouse ofertadas pelo aplicativo.
+					</p>
+
+					<h4>A cor dos botões ativos</h4>
+					<p>
+						Você pode selecionar qual cor irá representar as
+						ferramentas ativadas na barra de ferramentas.
+					</p>
+
+					<h4>Iniciar o aplicativo sempre que iniciar o Windows</h4>
+					<p>
+						Selecionar essa opção fará com que toda vez que você
+						ligue seu computador o aplicativo do eSSENTIAL
+						Accessibility seja iniciado sem que você tenha que
+						manualmente abri-lo.
+					</p>
+
+					<h4>Ativar arquivo de log</h4>
+					<p>
+						Essa opção não deverá ser tocada sem o pedido do time de
+						suporte do eSSENTIAL Accessibility. Ela é utilizada para
+						caso você tenha problemas ao usar o aplicativo e entre
+						em contato com o suporte através do email
+						<a href="mailto:support@essentialaccessibility.com"
+							>support@essentialaccessibility.com</a
+						>.
+					</p>
+
+					<h4>
+						Redefinir todas as configurações para os valores padrão
+					</h4>
+					<p>
+						Desfaz todas as alterações realizadas nas configurações
+						e retorna as mesmas para os valores padrão.
+					</p>
+				</section>
+				<section id="subtopic6_2">
+					<h3>Configurações de Teclado</h3>
+
+					<figure>
+						<img
+							src="images/(ID23)configuração teclado.png"
+							alt="Captura de tela mostrando a tela de configurações do teclado."
+						/>
+						<figcaption>
+							Captura de tela mostrando a tela de configurações do
+							teclado.
+						</figcaption>
+					</figure>
+
+					<h4>Abrir teclado automaticamente</h4>
+					<p>
+						Quando essa opção estiver ativada, o teclado virtual
+						poderá ser aberto tanto de maneira automática, onde o
+						teclado aparecerá automaticamente quando detectado uma
+						área de entrada de texto, como manual.
+					</p>
+
+					<h4>Utilize o teclado virtual integrado</h4>
+					<p>
+						Quando essa opção estiver ativada, o teclado virtual
+						utilizado será o da eSSENTIAL Accessibility. Quando essa
+						opção estiver desativada, ele utilizará o teclado do
+						próprio sistema Windows.
+					</p>
+
+					<h4>Layout</h4>
+					<p>
+						Você pode selecionar qual o modelo de disposição das
+						teclas você deseja ter para o seu teclado. Por padrão
+						ele irá iniciar com o layout utilizado pelo seu sistema,
+						caso ele não seja possível, o padrão será o
+						Inglês/English.
+					</p>
+
+					<h4>Largura do fator de zoom (%)</h4>
+					<p>
+						Essa opção permite que você altere individualmente a
+						largura do teclado. No próprio teclado virtual existem
+						botões “+” e “-” que alteram a largura e a altura em
+						conjunto.
+					</p>
+
+					<h4>Altura do fator de zoom (%)</h4>
+					<p>
+						Essa opção permite que você altere individualmente a
+						altura do teclado. No próprio teclado virtual existem
+						botões “+” e “-” que alteram a altura e a largura em
+						conjunto.
+					</p>
+				</section>
+				<section id="subtopic6_3">
+					<h3>Configurações de Mouse Padrão</h3>
+
+					<figure>
+						<img
+							src="images/(ID24)configuração substitutos de mouse em mouse comum.png"
+							alt="Captura de tela mostrando a tela de substitutos de mouse."
+						/>
+						<figcaption>
+							Captura de tela mostrando a tela de substitutos de
+							mouse.
+						</figcaption>
+					</figure>
+
+					<h4>Clique automático</h4>
+					<p>
+						Quando esta opção for ativada, o clique por mouse ou
+						botão será desativado e os cliques passarão a ser feitos
+						de maneira automática. O clique automático consiste em
+						realizar a ação de clique em um local no qual o cursor
+						permaneceu parado por alguns segundos. Existem outras
+						opções de configuração para o clique automático na
+						categoria “Opções de clique”.
+					</p>
+
+					<h4>Mostrar grade</h4>
+					<p>
+						Quando esta opção for ativada, uma grade de 10 por 10
+						será aplicada na tela, ela divide a tela em áreas
+						menores chamadas de células e cada uma possui seu
+						próprio código. Os códigos envolvem colunas de A a J e
+						linhas de 1 a 10, exemplo: célula A1 e célula B2.
+					</p>
+
+					<h4>Mostrar visão XY</h4>
+					<p>
+						Quando esta opção for ativada, o cursor se tornará um
+						círculo cortado por uma linha vertical e uma horizontal
+						que se estendem até o fim da tela.
+					</p>
+
+					<h4>Mais opções</h4>
+					<p>
+						Clicando em “Mais opções”, outras opções irão aparecer.
+					</p>
+
+					<h4>Relacionado à grade:</h4>
+					<ul>
+						<li>
+							<strong>Espessura das linhas de grade:</strong>
+							Permite definir a grossura das linhas que compõem a
+							grade, tornando-as mais ou menos grossas.
+						</li>
+						<li>
+							<strong>Cor da grade:</strong> Permite alterar a cor
+							das linhas da grade.
+						</li>
+					</ul>
+
+					<h4>Relacionado à visão XY:</h4>
+					<ul>
+						<li>
+							<strong>Largura da barra XY:</strong>
+							Permite definir a largura das linhas que cortam
+							vertical e horizontalmente a tela com base na
+							posição do cursor.
+						</li>
+						<li>
+							<strong>Cor da barra XY:</strong> Permite alterar a
+							cor das linhas presentes na visão XY.
+						</li>
+						<li>
+							<strong>Raio de visão XY:</strong> Permite alterar o
+							tamanho do círculo que substitui o cursor.
+						</li>
+					</ul>
+				</section>
+				<section id="subtopic6_4">
+					<h3>Configurações do Mouse por Movimento</h3>
+
+					<figure>
+						<img
+							src="images/(ID25)configuração em mouse visual.png"
+							alt="Captura de tela mostrando a configuração do mouse visual (parte 1)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							visual (parte 1).
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID26)configuração em mouse visual - mais opções p1.png"
+							alt="Captura de tela mostrando a configuração do mouse visual (parte 2)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							visual (parte 2).
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID27)configuração em mouse visual - mais opções p2.png"
+							alt="Captura de tela mostrando a configuração do mouse visual (parte 3)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							visual (parte 3).
+						</figcaption>
+					</figure>
+
+					<h4>WebCam:</h4>
+					<p>
+						Permite escolher qual webcam será utilizada quando o
+						mouse por movimento for ativado.
+					</p>
+
+					<h4>A configuração da área:</h4>
+					<p>
+						Você pode selecionar entre ter a calibração da área de
+						foco do movimento automática ou manual. A opção de
+						“Configurar” ao lado irá iniciar um processo de
+						calibração.
+					</p>
+
+					<h4>Faça a calibração na inicialização do mouse visual:</h4>
+					<p>
+						Quando esta opção estiver ativada, quando o mouse por
+						movimento for ativado irá ser iniciado um processo de
+						calibração automaticamente.
+					</p>
+
+					<h4>Sensibilidade horizontal (%):</h4>
+					<p>
+						Permite que você altere a velocidade do movimento
+						horizontal do mouse quando o movimento é detectado na
+						área de foco.
+					</p>
+
+					<h4>Sensibilidade vertical (%):</h4>
+					<p>
+						Permite que você altere a velocidade do movimento
+						vertical do mouse quando o movimento é detectado na área
+						de foco.
+					</p>
+
+					<h4>Clique automático:</h4>
+					<p>
+						Quando esta opção for ativada, a ação do clique será
+						realizada quando o cursor do mouse permanecer parado em
+						um mesmo local por alguns segundos.
+					</p>
+
+					<h4>Mostrar grade:</h4>
+					<p>
+						Quando esta opção for ativada, uma grade de 10 por 10
+						será aplicada na tela, ela divide a tela em áreas
+						menores chamadas de células e cada uma possui seu
+						próprio código.
+					</p>
+
+					<h4>Mostrar visão XY:</h4>
+					<p>
+						Quando esta opção for ativada, o cursor se tornará um
+						círculo cortado por uma linha vertical e uma horizontal
+						que se estendem até o fim da tela.
+					</p>
+
+					<h4>Mais opções:</h4>
+					<p>
+						Clicando em “Mais opções”, outras opções irão aparecer.
+					</p>
+
+					<h4>Relacionado à grade:</h4>
+					<ul>
+						<li>
+							<strong>Espessura das linhas de grade:</strong>
+							Permite definir a grossura das linhas que compõem a
+							grade.
+						</li>
+						<li>
+							<strong>Cor da grade:</strong> Permite alterar a cor
+							das linhas da grade.
+						</li>
+					</ul>
+
+					<h4>Relacionado à visão XY:</h4>
+					<ul>
+						<li>
+							<strong>Largura da barra XY:</strong>
+							Permite definir a largura das linhas que cortam
+							vertical e horizontalmente a tela com base na
+							posição do cursor.
+						</li>
+						<li>
+							<strong>Cor da barra XY:</strong> Permite alterar a
+							cor das linhas presentes na visão XY.
+						</li>
+						<li>
+							<strong>Raio de visão XY:</strong> Permite alterar o
+							tamanho do círculo que substitui o cursor.
+						</li>
+					</ul>
+
+					<h4>Calibração:</h4>
+					<ul>
+						<li>
+							<strong
+								>Tempo de espera antes de iniciar a calibração
+								(s):</strong
+							>
+							Permite definir quanto tempo de atraso antes da
+							calibração ser iniciada.
+						</li>
+						<li>
+							<strong
+								>Tempo de espera antes de aceitar a calibração
+								(s):</strong
+							>
+							Permite definir quanto tempo de atraso antes de
+							aceitar automaticamente a calibração realizada.
+						</li>
+					</ul>
+				</section>
+				<section id="subtopic6_5">
+					<h3>Configurações do Mouse XY</h3>
+
+					<figure>
+						<img
+							src="images/(ID28)configuração em mouse xy.png"
+							alt="Captura de tela mostrando a configuração do mouse XY."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							XY.
+						</figcaption>
+					</figure>
+
+					<h4>Velocidade vertical</h4>
+					<p>
+						Permite alterar a velocidade com a qual a linha irá se
+						movimentar verticalmente.
+					</p>
+
+					<h4>Velocidade horizontal</h4>
+					<p>
+						Permite alterar a velocidade com a qual a linha irá se
+						movimentar horizontalmente.
+					</p>
+
+					<h4>Uma pausa após o clique</h4>
+					<p>
+						Permite alterar quanto tempo de atraso existe entre a
+						ação de clicar e o escaneamento da tela começar
+						novamente.
+					</p>
+
+					<h4>Mais opções</h4>
+					<p>
+						Clicando em “Mais opções”, outras opções irão aparecer.
+					</p>
+
+					<h4>Cor da barra</h4>
+					<p>
+						Permite alterar a cor das linhas e círculo que irão
+						escanear a tela.
+					</p>
+
+					<h4>Largura da barra</h4>
+					<p>
+						Permite definir qual será a largura das linhas e
+						círculo.
+					</p>
+
+					<h4>Raio de visão</h4>
+					<p>
+						Permite definir o tamanho do círculo que representa o
+						local onde as linhas horizontal e vertical se encontram
+						e o clique será realizado.
+					</p>
+
+					<h4>“Ponteiro segue visão</h4>
+					<p>
+						Quando ativada, permite que o cursor do mouse, que
+						“desaparece” da tela, siga as linhas e quando o mouse XY
+						for desativado ele encontre-se onde as linhas estavam
+						por último.
+					</p>
+				</section>
+				<section id="subtopic6_6">
+					<h3>Configurações do Mouse Radar</h3>
+
+					<figure>
+						<img
+							src="images/(ID29)configuração em mouse radar p1.png"
+							alt="Captura de tela mostrando a configuração do mouse radar (parte 1)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							radar (parte 1).
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID30)configuração em mouse radar p2.png"
+							alt="Captura de tela mostrando a configuração do mouse radar (parte 2)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração do mouse
+							radar (parte 2).
+						</figcaption>
+					</figure>
+
+					<h4>Posição central do radar</h4>
+					<p>
+						Uma vez que o mouse radar tem dois possíveis pontos de
+						referência para seu funcionamento, esta opção permite
+						que você defina qual será o ponto de referência.
+					</p>
+
+					<h4>Velocidade angular</h4>
+					<p>
+						Permite alterar a velocidade com a qual a linha se
+						movimenta de forma circular.
+					</p>
+
+					<h4>Velocidade axial</h4>
+					<p>
+						Permite alterar a velocidade com a qual o círculo irá
+						percorrer a linha definida até a área onde o clique será
+						realizado.
+					</p>
+
+					<h4>Uma pausa após o clique</h4>
+					<p>
+						Permite alterar quanto tempo de atraso existe entre a
+						ação de clicar e o escaneamento da tela começar
+						novamente.
+					</p>
+
+					<h4>Mais opções</h4>
+					<p>
+						Clicando em “Mais opções”, outras opções irão aparecer.
+					</p>
+
+					<ul>
+						<li>
+							<strong>Cor da barra:</strong> Permite alterar a cor
+							da linha e círculo que irá escanear a tela.
+						</li>
+						<li>
+							<strong>Largura da barra:</strong> Permite definir
+							qual será a largura da linha e do círculo.
+						</li>
+						<li>
+							<strong>Raio de visão:</strong> Permite definir o
+							tamanho do círculo que representa o local onde as
+							linhas horizontal e vertical se encontram e o clique
+							será realizado.
+						</li>
+						<li>
+							<strong>Ponteiro segue visão:</strong>
+							Quando ativada, permite que o cursor do mouse, que
+							“desaparece” da tela, siga a linha e quando o mouse
+							radar for desativado ele encontre-se onde a linha
+							estava por último.
+						</li>
+					</ul>
+				</section>
+				<section id="subtopic6_7">
+					<h3>Configurações de Opções de Clique</h3>
+
+					<figure>
+						<img
+							src="images/(ID31)configurações cliques p1.png"
+							alt="Captura de tela mostrando a configuração de opções de cliques (parte 1)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração de opções
+							de cliques (parte 1).
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/(ID32)configurações cliques p2.png"
+							alt="Captura de tela mostrando a configuração de opções de cliques (parte 2)."
+						/>
+						<figcaption>
+							Captura de tela mostrando a configuração de opções
+							de cliques (parte 2).
+						</figcaption>
+					</figure>
+
+					<h4>Efeito visual</h4>
+					<p>
+						Quando ativado, realizar a ação de clique irá causar um
+						efeito ao redor da área para fácil visualização de onde
+						ocorreu o clique.
+					</p>
+
+					<h4>Clique ao apertar botão</h4>
+					<p>
+						Quando ativada, o clique será efetuado na ação de
+						pressionar o botão invés do ato de soltar o botão após
+						pressionar como é o padrão.
+					</p>
+
+					<h4>Mais opções</h4>
+					<p>
+						Clicando em “Mais opções”, outras opções irão aparecer.
+					</p>
+
+					<h4>Relacionado ao efeito visual:</h4>
+					<ul>
+						<li>
+							<strong>Tamanho visual:</strong> Permite alterar o
+							tamanho do efeito visual.
+						</li>
+						<li>
+							<strong>Cor:</strong> Permite alterar a cor do
+							efeito visual.
+						</li>
+					</ul>
+
+					<h4>Relacionado ao clique automático:</h4>
+					<ul>
+						<li>
+							<strong
+								>Tempo de permanência antes de clicar
+								(seg):</strong
+							>
+							Permite determinar quanto tempo o cursor deve
+							permanecer parado para então a ação de clique ser
+							realizada.
+						</li>
+						<li>
+							<strong>Limite de posição (pixels):</strong> Permite
+							determinar qual é a tolerância de movimento em
+							pixels que podem ser ignorados para realizar o
+							clique automático.
+						</li>
+						<li>
+							<strong>Permitir clique repetido:</strong> Quando
+							ativada, permite que mais de um clique automático
+							seja realizado em um mesmo local.
+						</li>
+						<li>
+							<strong>Permitir clique do mouse:</strong> Quando
+							ativada, aceitará ambos o clique automático por
+							falta de movimento quanto o clique manual. Quando
+							desativada, a única forma de clique é automático,
+							uma vez que irá bloquear o clique manual.
+						</li>
+					</ul>
+				</section>
+
+				<section id="subtopic6_8">
+					<h3>
+						Configurações de Leitura (Leitor de Texto do Cursor)
+					</h3>
+
+					<figure>
+						<img
+							src="images/(ID33)configurações de leitura.png"
+							alt="Captura de tela mostrando as configurações de leitura."
+						/>
+						<figcaption>
+							Captura de tela mostrando as configurações de
+							leitura.
+						</figcaption>
+					</figure>
+
+					<h4>Voz</h4>
+					<p>
+						Entre as opções disponíveis para o seu sistema e
+						linguagem, esta opção permite que você escolha qual voz
+						realizará as leituras.
+					</p>
+
+					<h4>Volume (%)</h4>
+					<p>
+						Permite alterar o volume de leitura realizado pelo
+						eSSENTIAL Accessibility comparado com o volume do seu
+						aúdio.
+					</p>
+
+					<h4>Velocidade de leitura</h4>
+					<p>
+						Permite alterar a velocidade com a qual a leitura será
+						realizada.
+					</p>
+
+					<h4>Abra a janela de configuração do Windows</h4>
+					<p>
+						Irá abrir as configurações do seu Windows relacionadas
+						ao idioma e fala para que você possa tentar
+						adicionar/fazer o download de novas vozes.
+					</p>
+				</section>
+
+				<section id="subtopic6_9">
+					<h3>Configurações de Comandos de Voz</h3>
+
+					<p>
+						Dependendo da linguagem utilizada essa seção não estará
+						disponível. Uma mensagem aparecerá informando que o
+						sistema não suporta o reconhecimento de voz na
+						linguagem. Esse é o caso para quem utiliza a linguagem
+						Português.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID34)configurações de comandos de voz para português e mensagem mostrada.png"
+							alt="Captura de tela mostrando as configurações de comandos de voz para português."
+						/>
+						<figcaption>
+							Captura de tela mostrando as configurações de
+							comandos de voz para português.
+						</figcaption>
+					</figure>
+
+					<p>
+						Caso esteja com uma linguagem compatível e tenha os
+						pacotes de voz baixados, outra informação será exibida.
+						A demonstração abaixo está utilizando a linguagem
+						Inglês/English.
+					</p>
+
+					<figure>
+						<img
+							src="images/(ID35)configurações de comandos de voz para inglês com pacote instalado.png"
+							alt="Captura de tela mostrando as configurações de comandos de voz para inglês com pacote instalado."
+						/>
+						<figcaption>
+							Captura de tela mostrando as configurações de
+							comandos de voz para inglês com pacote instalado.
+						</figcaption>
+					</figure>
+
+					<h4>Voice recognition engine</h4>
+					<p>
+						Esta opção permite selecionar qual mecanismo de
+						reconhecimento de voz será utilizado.
+					</p>
+
+					<h4>Show Commands</h4>
+					<p>
+						Abre uma página web contendo os comandos aceitos pelo
+						aplicativo.
+					</p>
+
+					<p>
+						Como conseguir fazer os comandos de voz funcionarem ao
+						alterar a linguagem é explicado na seção de Comandos de
+						Voz deste manual.
+						<a href="#subtopic5_2"
+							>Você pode ir direto para a seção clicando aqui.</a
+						>
+					</p>
+				</section>
+			</article>
+
+			<article id="topic7">
+				<section id="subtopic7_1">
+					<h3>Ícones</h3>
+
+					<p>
+						Caso não tenha certeza do que cada ícone significa,
+						segue aqui uma tabela com seus nomes.
+					</p>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de ícones.
+						</caption>
+						<thead>
+							<tr>
+								<th>Ícone</th>
+								<th>Descrição</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img
+										src="images/(ID36)ícone do hands-free mouse.PNG"
+										alt="Ícone representando o mouse por movimento"
+									/>
+								</td>
+								<td>Mouse por movimento</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID37)ícone do mouse xy.PNG"
+										alt="Ícone representando o mouse XY"
+									/>
+								</td>
+								<td>Mouse XY</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID38)ícone do mouse radar.PNG"
+										alt="Ícone representando o mouse radar"
+									/>
+								</td>
+								<td>Mouse radar</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID12)Arrastar e soltar.PNG"
+										alt="Ícone representando arrastar e soltar"
+									/>
+								</td>
+								<td>Arrastar e soltar</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID10)Clique direito.PNG"
+										alt="Ícone representando o clique com o botão direito"
+									/>
+								</td>
+								<td>Clique com o botão direito</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID11)Clique duplo.PNG"
+										alt="Ícone representando o clique duplo"
+									/>
+								</td>
+								<td>Clique duplo</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID20)Icone comando de voz.PNG"
+										alt="Ícone representando o comando de voz"
+									/>
+								</td>
+								<td>Comando de voz</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID13)Speech over.PNG"
+										alt="Ícone representando o leitor de textos do cursor"
+									/>
+								</td>
+								<td>Leitor de Texto do Cursor</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID39)ícone de teclado virtual.PNG"
+										alt="Ícone representando o teclado virtual"
+									/>
+								</td>
+								<td>Teclado virtual</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID40)ícone de Configurações.PNG"
+										alt="Ícone representando configurações"
+									/>
+								</td>
+								<td>Configurações</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID41)ícone de Ajuda.PNG"
+										alt="Ícone representando o serviço de ajuda"
+									/>
+								</td>
+								<td>Ajuda</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										src="images/(ID42)ícone de sair do aplicativo.PNG"
+										alt="Ícone representando o botão de sair do aplicativo"
+									/>
+								</td>
+								<td>Sair do aplicativo</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="subtopic7_2">
+					<h3>Atalhos</h3>
+
+					<p>Os atalhos aceitos pelo eSSENTIAL Accessibility são:</p>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de atalhos.
+						</caption>
+						<thead>
+							<tr>
+								<th>Atalho</th>
+								<th>Descrição</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>CTRL + F1</td>
+								<td>
+									Desativa qualquer tipo de alternativa de
+									mouse e retorna para o mouse padrão.
+								</td>
+							</tr>
+							<tr>
+								<td>CTRL + F2</td>
+								<td>Ativa o Mouse XY.</td>
+							</tr>
+							<tr>
+								<td>CTRL + F4</td>
+								<td>Ativa o Mouse por Movimento.</td>
+							</tr>
+							<tr>
+								<td>CTRL + F5</td>
+								<td>Ativa o Mouse Radar.</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="subtopic7_3">
+					<h3>Comandos</h3>
+
+					<p>
+						Como os comandos de voz não estão disponíveis em
+						português a tabela abaixo indica o comando de voz em
+						inglês com uma explicação traduzida de sua função.
+					</p>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz principais.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Start XY mouse</td>
+								<td>Inicia o mouse XY</td>
+							</tr>
+							<tr>
+								<td>Start radar mouse</td>
+								<td>Inicia o mouse radar</td>
+							</tr>
+							<tr>
+								<td>Start hands-free mouse</td>
+								<td>Inicia o mouse por movimento</td>
+							</tr>
+							<tr>
+								<td>Stop mouse</td>
+								<td>Para o substituto de mouse em uso</td>
+							</tr>
+							<tr>
+								<td>Click</td>
+								<td>Realiza um clique</td>
+							</tr>
+							<tr>
+								<td>Enable speech over</td>
+								<td>Habilita leitura de texto do cursor</td>
+							</tr>
+							<tr>
+								<td>Disable speech over</td>
+								<td>Desabilita leitura de texto do cursor</td>
+							</tr>
+							<tr>
+								<td>"Open keyboard" ou "Show keyboard"</td>
+								<td>Abre teclado virtual</td>
+							</tr>
+							<tr>
+								<td>"Close keyboard" ou "Hide keyboard"</td>
+								<td>Fecha teclado virtual</td>
+							</tr>
+							<tr>
+								<td>
+									"Open settings" ou "Show settings" ou "Open
+									options" ou "Show options"
+								</td>
+								<td>Abre menu de configurações</td>
+							</tr>
+							<tr>
+								<td>
+									"Close settings" ou "Close options" ou "Hide
+									settings" ou "Hide Options"
+								</td>
+								<td>Fecha menu de configurações</td>
+							</tr>
+							<tr>
+								<td>
+									"Show help" ou "Show user manual" ou "Open
+									help" ou "Open user manual"
+								</td>
+								<td>Abre a ajuda online</td>
+							</tr>
+							<tr>
+								<td>Show voice commands</td>
+								<td>Mostra os comandos de voz disponíveis</td>
+							</tr>
+							<tr>
+								<td>Enable dictation</td>
+								<td>Habilita modo discurso para texto</td>
+							</tr>
+							<tr>
+								<td>Disable dictation</td>
+								<td>Desabilita modo discurso para texto</td>
+							</tr>
+							<tr>
+								<td>"Exit" ou "Exit application"</td>
+								<td>
+									Fecha o "eSSENTIAL accessibility Windows
+									Application"
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para caixas de diálogo.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>OK</td>
+								<td>Clica no botão de "OK"</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td>Clica no botão de "Yes"</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Clica no botão de "No"</td>
+							</tr>
+							<tr>
+								<td>Cancel</td>
+								<td>Clica no botão de "Cancel"</td>
+							</tr>
+							<tr>
+								<td>Close</td>
+								<td>Clica no botão de "Close"</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para o mouse Radar e mouse
+							XY.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									"Reverse direction" ou "Change direction"
+								</td>
+								<td>Reverte a direção de movimento do mouse</td>
+							</tr>
+							<tr>
+								<td>"Faster" ou "Speed up"</td>
+								<td>Aumenta a velocidade do cursor</td>
+							</tr>
+							<tr>
+								<td>"Slower" ou "Speed down"</td>
+								<td>Diminui a velocidade do cursor</td>
+							</tr>
+							<tr>
+								<td>"High speed" ou "Maximum speed"</td>
+								<td>
+									Aumenta a velocidade do cursor para o máximo
+								</td>
+							</tr>
+							<tr>
+								<td>"Low speed" ou "Minimum speed"</td>
+								<td>Diminui velocidade para o mínimo</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para o mouse padrão.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									"Reverse direction" ou "Change direction"
+								</td>
+								<td>Reverte a direção de movimento do mouse</td>
+							</tr>
+							<tr>
+								<td>"Faster" ou "Speed up"</td>
+								<td>Aumenta a velocidade do cursor</td>
+							</tr>
+							<tr>
+								<td>"Slower" ou "Speed down"</td>
+								<td>Diminui a velocidade do cursor</td>
+							</tr>
+							<tr>
+								<td>"High speed" ou "Maximum speed"</td>
+								<td>
+									Aumenta a velocidade do cursor para o máximo
+								</td>
+							</tr>
+							<tr>
+								<td>"Low speed" ou "Minimum speed"</td>
+								<td>Diminui velocidade para o mínimo</td>
+							</tr>
+							<tr>
+								<td>Move left</td>
+								<td>Cursor começa se mexer para a esquerda</td>
+							</tr>
+							<tr>
+								<td>Move right</td>
+								<td>Cursor começa se mexer para a direita</td>
+							</tr>
+							<tr>
+								<td>Move up</td>
+								<td>Cursor começa se mexer para cima</td>
+							</tr>
+							<tr>
+								<td>Move down</td>
+								<td>Cursor começa se mexer para baixo</td>
+							</tr>
+							<tr>
+								<td>"Go to A1", "Go to A2" ... "Go to J10"</td>
+								<td>
+									O cursor vai para a posição da grade
+									definida
+								</td>
+							</tr>
+							<tr>
+								<td>"Stop" ou "Stop moving"</td>
+								<td>Para de mover o cursor</td>
+							</tr>
+							<tr>
+								<td>Show grid</td>
+								<td>Mostra grade de posições do mouse</td>
+							</tr>
+							<tr>
+								<td>"Show labels" ou "Show grid labels"</td>
+								<td>
+									Mostra a nomenclatura das grade de posição
+								</td>
+							</tr>
+							<tr>
+								<td>Hide grid</td>
+								<td>Esconde a grade de posição do mouse</td>
+							</tr>
+							<tr>
+								<td>Show cross bars</td>
+								<td>
+									Mostram as barras XY que seguem o cursor
+								</td>
+							</tr>
+							<tr>
+								<td>Hide cross bars</td>
+								<td>
+									Escondem as barras de XY que seguem o cursor
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para o mouse por
+							movimento.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Webcam calibration</td>
+								<td>Abre a calibração por WebCam</td>
+							</tr>
+							<tr>
+								<td>Go to A</td>
+								<td>Leva o cursor para a posição A da grade</td>
+							</tr>
+							<tr>
+								<td>"Go to A1", "Go to A2" ... "Go to J10"</td>
+								<td>
+									O cursor vai para a posição da grade
+									definida
+								</td>
+							</tr>
+							<tr>
+								<td>"Stop" ou "Stop moving"</td>
+								<td>Para de mover o cursor</td>
+							</tr>
+							<tr>
+								<td>Show grid</td>
+								<td>Mostra grade de posições do mouse</td>
+							</tr>
+							<tr>
+								<td>"Show labels" ou "Show grid labels"</td>
+								<td>
+									Mostra a nomenclatura das grade de posição
+								</td>
+							</tr>
+							<tr>
+								<td>Hide grid</td>
+								<td>Esconde a grade de posição do mouse</td>
+							</tr>
+							<tr>
+								<td>Show cross bars</td>
+								<td>
+									Mostram as barras XY que seguem o cursor
+								</td>
+							</tr>
+							<tr>
+								<td>Hide cross bars</td>
+								<td>
+									Escondem as barras de XY que seguem o cursor
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para cliques de ação.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Select left click</td>
+								<td>Seleciona a ação de clique esquerdo</td>
+							</tr>
+							<tr>
+								<td>Select right click</td>
+								<td>Seleciona a ação de clique direito</td>
+							</tr>
+							<tr>
+								<td>Select double click</td>
+								<td>Seleciona a ação de clique duplo</td>
+							</tr>
+							<tr>
+								<td>Select drag and drop</td>
+								<td>Seleciona a ação de arrastar e soltar</td>
+							</tr>
+							<tr>
+								<td>Pause autoclick</td>
+								<td>Pausa o clique automático</td>
+							</tr>
+							<tr>
+								<td>Resume autoclick</td>
+								<td>Reativa o clique automático</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table
+						class="table table-striped table-bordered table-condensed"
+					>
+						<caption>
+							Tabela de comandos de voz para teclado.
+						</caption>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>"Press A", ..., "Press Z"</td>
+								<td>
+									Pressiona a tecla de letra do teclado
+									virtual
+								</td>
+							</tr>
+							<tr>
+								<td>"Press number 0", ..., "Press number 9"</td>
+								<td>Pressiona tecla de número</td>
+							</tr>
+							<tr>
+								<td>
+									"Press first prediction", ..., "Press fifth
+									prediction"
+								</td>
+								<td>
+									Seleciona uma das opções da primeira a
+									quinta sugestão do teclado virtual
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Press "nome da tecla como a ferramenta de
+									leitura de texto do mouse fala", ex. "Press
+									Enter"
+								</td>
+								<td>
+									Pressiona todas as outras teclas do teclado
+									virtual, no exemplo pressiona a tecla Enter
+								</td>
+							</tr>
+							<tr>
+								<td>Increase keyboard size</td>
+								<td>Aumenta o tamanho do teclado virtual</td>
+							</tr>
+							<tr>
+								<td>Decrease keyboard size</td>
+								<td>Diminui o tamanho do teclado virtual</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+		</main>
+
+		<script>
+			var alturaMaxima;
+
+			window.onload = function () {
+				alturaMaxima =
+					document.getElementById('sumario').scrollHeight + 'px';
+			};
+
+			function expandirRetrair() {
+				btn = document.getElementById('btn_icon');
+				if (btn.innerHTML == 'expand_circle_up') {
+					btn.innerHTML = 'expand_circle_down';
+				} else {
+					btn.innerHTML = 'expand_circle_up';
+				}
+
+				if (sumario.style.maxHeight !== '0px') {
+					sumario.style.maxHeight = '0px';
+				} else {
+					sumario.style.maxHeight = alturaMaxima;
+				}
+			}
+		</script>
+	</body>
+</html>
