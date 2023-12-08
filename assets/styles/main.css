@@ -177,3 +177,20 @@ figcaption {
 .video{
     margin: 20px;
 }
+
+.footer{
+    padding: 12px;
+    background-color: #46688d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a{
+    color: #ffffff;
+}
+
+.footer a:hover{
+    color: #deeeff;
+}
