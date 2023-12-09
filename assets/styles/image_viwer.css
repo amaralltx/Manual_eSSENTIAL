@@ -8,8 +8,19 @@ img:not(#full-image) {
     transition: 0.3s;
 }
 
-img:not(#full-image):hover {
-    opacity: 0.7;
+.table-icons {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: transform .2s;
+}
+
+.mouse-toolbar-img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: transform .2s;
+}
+
+.table-icons:hover, .table-icons:focus, .mouse-toolbar-img:hover, .mouse-toolbar-img:focus{
+    transform: scale(3)
 }
 
 /* The Modal (background) */
