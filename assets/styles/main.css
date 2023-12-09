@@ -2,20 +2,25 @@
 
 body {
 	font-family: 'Lexend', sans-serif;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header {
 	background-color: #46688d;
 	color: #fff;
-	width: 100%;
 }
 
-h2 {
+h2, a {
 	color: #1c518a;
+}
+h2 {
+	margin-top: 60px;
 }
 
 #main-container {
@@ -44,13 +49,6 @@ h2 {
 	}
 }
 
-@media (max-width: 768px) {
-	header {
-		padding: 10px;
-		text-align: center;
-	}
-}
-
 #main-content {
 	flex: 1;
 	padding: 20px;
@@ -67,31 +65,6 @@ h2 {
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
-	#menu {
-		display: none;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		height: 100%;
-	}
-
-	#menu.show {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#main-content {
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-
-	#menu-toggle {
-		display: block;
-	}
-}
 
 .icon-image > img {
 	height: 1.5rem;
@@ -179,10 +152,11 @@ figure {
 }
 
 figure > img {
-	max-width: 70vw;
-	max-height: 70vh;
-	overflow: auto;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
 }
+
 
 figcaption {
 	text-align: center;
@@ -215,4 +189,40 @@ figcaption {
 
 .footer a:hover {
 	color: #deeeff;
+}
+
+@media (max-width: 768px) {
+	#menu {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+
+	#menu.show {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#main-content {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#menu-toggle {
+		display: block;
+	}
+	header {
+		padding: 10px;
+		text-align: center;
+	}
+	figure {
+		display: block;
+		text-align: center;
+		padding: 0px;
+		margin: 40px 0;
+	}
 }

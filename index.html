@@ -46,7 +46,7 @@
 			</h1>
 		</header>
 		<nav>
-			<div style="display: flex; align-items: center">
+			<div style="display: flex; align-items: center; ">
 				<h2 class="sumario_titulo">Sumário</h2>
 				<button
 					aria-label="Botão exibir ou esconder sumário"
@@ -3037,6 +3037,7 @@
 		<button
 			onclick="topFunction()"
 			id="btnTopo"
+			class="btnTopo"
 			title="Ir para o topo"
 		>
 			Voltar ao topo
@@ -3070,8 +3071,8 @@
 			imgArray.forEach((element) => {
 				element.addEventListener('click', function () {
 					document.getElementById('full-image').src = element.src;
-					document.getElementById('image-viewer').style.display =
-						'flex';
+					document.getElementById('image-viewer').style.display = 'flex';
+					document.getElementById("btnTopo").style.display = 'none';
 				});
 			});
 
@@ -3080,12 +3081,14 @@
 				.getElementsByClassName('close')[0];
 			imgViwerCloseBtn.addEventListener('click', function () {
 				document.getElementById('image-viewer').style.display = 'none';
+				document.getElementById("btnTopo").style.display = 'block';
 			});
 
 			document.addEventListener('keydown', function (e) {
 				if (e.keyCode == 27) {
 					document.getElementById('image-viewer').style.display =
 						'none';
+						document.getElementById("btnTopo").style.display = 'block';
 				}
 			});
 
