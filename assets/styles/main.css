@@ -23,6 +23,16 @@ h2 {
 	margin-top: 60px;
 }
 
+a:hover {
+	color: #000;
+}
+
+.div-centralizada {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 #main-container {
 	display: flex;
 }
@@ -69,6 +79,7 @@ h2 {
 .icon-image > img {
 	height: 1.5rem;
 	vertical-align: middle;
+	transform: scale(1);
 	transition: transform 0.2s;
 }
 
@@ -83,7 +94,7 @@ h2 {
 }
 
 .table {
-	margin-bottom: 20px;
+	margin: 40px 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -146,9 +157,15 @@ table > caption {
 
 /* figuras */
 figure {
-	display: block;
+	display: inline-block;
 	text-align: center;
-	padding: 20px;
+	margin: 40px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+	border: 2px solid #1c518a;
+	border-radius: 20px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 figure > img {
@@ -160,7 +177,8 @@ figure > img {
 
 figcaption {
 	text-align: center;
-	font-weight: bold;
+	font-weight: 500;
+	margin-top: 10px;
 }
 
 .video_caixa {
