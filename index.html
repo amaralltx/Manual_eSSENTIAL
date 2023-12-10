@@ -71,7 +71,7 @@
 						class="sumario_secao_link"
 						>Primeiros Passos</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_primeiros_passos"
 					>
@@ -84,7 +84,7 @@
 								>Barra de Ferramentas e seus ícones</a
 							>
 						</li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -93,12 +93,12 @@
 						class="sumario_secao_link"
 						>Alternativas para teclado</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_alternativa_teclado"
 					>
 						<li><a href="#subtopic2_1">Teclado virtual</a></li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -107,7 +107,7 @@
 						class="sumario_secao_link"
 						>Alternativas para mouse</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_alternativa_mouse"
 					>
@@ -115,7 +115,7 @@
 						<li><a href="#subtopic3_2">Mouse por movimento</a></li>
 						<li><a href="#subtopic3_3">Mouse XY</a></li>
 						<li><a href="#subtopic3_4">Mouse Radar</a></li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -124,7 +124,7 @@
 						class="sumario_secao_link"
 						>Alternativas de clique</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_alternativa_clique"
 					>
@@ -133,7 +133,7 @@
 						<li>
 							<a href="#subtopic4_3">Definição Ação de Clique</a>
 						</li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -142,7 +142,7 @@
 						class="sumario_secao_link"
 						>Outras ferramentas</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_outras_ferramentas"
 					>
@@ -150,7 +150,7 @@
 							<a href="#subtopic5_1">Leitor de Texto do Cursor</a>
 						</li>
 						<li><a href="#subtopic5_2">Comandos de Voz</a></li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -159,7 +159,7 @@
 						class="sumario_secao_link"
 						>Configurações</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_configuracoes"
 					>
@@ -201,7 +201,7 @@
 								>Configurações de Comandos de Voz</a
 							>
 						</li>
-					</ul>
+					</ol>
 				</li>
 
 				<li class="sumario_secao">
@@ -210,14 +210,14 @@
 						class="sumario_secao_link"
 						>Apêndice</a
 					>
-					<ul
+					<ol
 						class="sub-menu"
 						id="sum_apendice"
 					>
 						<li><a href="#subtopic7_1">Ícones</a></li>
 						<li><a href="#subtopic7_2">Atalhos</a></li>
 						<li><a href="#subtopic7_3">Comandos</a></li>
-					</ul>
+					</ol>
 				</li>
 			</ol>
 		</nav>
@@ -1202,12 +1202,11 @@
 						aguardar pelo tempo de um clique, sendo possível também
 						ativá-lo via comando de voz. É importante destacar que
 						quando o clique automático está pausado, ele continuará
-						respondendo no botão de pausa/play, mesmo que não
-						funcione em nenhum outro lugar. Portanto, evite
-						descansar o cursor sobre esse botão, pois a aplicação
-						alternará entre pausa e
-						<span lang="en">"play"</span> sempre que o tempo de
-						clique for atingido.
+						respondendo no botão de pausa e <span lang="en">play</span>,
+						mesmo que não funcione em nenhum outro lugar. Portanto, 
+						evite descansar o cursor sobre esse botão, pois a aplicação
+						alternará entre pausa e <span lang="en">"play"</span> 
+						sempre que o tempo de clique for atingido.
 					</p>
 
 					<p>
@@ -1721,9 +1720,13 @@
 					<h4>Idioma</h4>
 					<p>
 						Você pode selecionar em qual idioma você gostaria que o
-						eSSENTIAL Accessibility esteja. Por padrão, ele irá
-						iniciar com o idioma do seu sistema se possível, caso
-						não seja possível o padrão será o Inglês/English.
+						<span 
+							  aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span> esteja. 
+						Por padrão, ele irá iniciar com o idioma do seu sistema 
+						se possível, caso não seja possível o padrão será o 
+						Inglês/<span lang="en">English</span>.
 					</p>
 
 					<h4>Posição da barra de ferramentas</h4>
@@ -1737,8 +1740,11 @@
 					<h4>Substitutos de mouse ativado na inicialização</h4>
 					<p>
 						Você pode selecionar qual mouse estará ativado quando o
-						eSSENTIAL Accessibility for iniciado entre o mouse comum
-						e as alternativas de mouse ofertadas pelo aplicativo.
+						<span aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span> for iniciado 
+						entre o mouse comum e as alternativas de mouse ofertadas 
+						pelo aplicativo.
 					</p>
 
 					<h4>A cor dos botões ativos</h4>
@@ -1750,20 +1756,23 @@
 					<h4>Iniciar o aplicativo sempre que iniciar o Windows</h4>
 					<p>
 						Selecionar essa opção fará com que toda vez que você
-						ligue seu computador o aplicativo do eSSENTIAL
-						Accessibility seja iniciado sem que você tenha que
-						manualmente abri-lo.
+						ligue seu computador o aplicativo do
+						<span aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span> seja iniciado 
+						sem que você tenha que manualmente abri-lo.
 					</p>
 
 					<h4>Ativar arquivo de log</h4>
 					<p>
 						Essa opção não deverá ser tocada sem o pedido do time de
-						suporte do eSSENTIAL Accessibility. Ela é utilizada para
-						caso você tenha problemas ao usar o aplicativo e entre
+						suporte do
+						<span aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span>. Ela é utilizada 
+						para caso você tenha problemas ao usar o aplicativo e entre
 						em contato com o suporte através do email
-						<a href="mailto:support@essentialaccessibility.com"
-							>support@essentialaccessibility.com</a
-						>.
+						<a href="mailto:support@essentialaccessibility.com">support@essentialaccessibility.com</a>.
 					</p>
 
 					<h4>
@@ -1795,13 +1804,16 @@
 						Quando essa opção estiver ativada, o teclado virtual
 						poderá ser aberto tanto de maneira automática, onde o
 						teclado aparecerá automaticamente quando detectado uma
-						área de entrada de texto, como manual.
+						área de entrada de texto, como de maneira manual.
 					</p>
 
 					<h4>Utilize o teclado virtual integrado</h4>
 					<p>
 						Quando essa opção estiver ativada, o teclado virtual
-						utilizado será o da eSSENTIAL Accessibility. Quando essa
+						utilizado será o da
+						<span aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span>. Quando essa
 						opção estiver desativada, ele utilizará o teclado do
 						próprio sistema Windows.
 					</p>
@@ -1812,23 +1824,23 @@
 						teclas você deseja ter para o seu teclado. Por padrão
 						ele irá iniciar com o layout utilizado pelo seu sistema,
 						caso ele não seja possível, o padrão será o
-						Inglês/English.
+						Inglês/<span lang="en">English</span>.
 					</p>
 
 					<h4>Largura do fator de zoom (%)</h4>
 					<p>
 						Essa opção permite que você altere individualmente a
 						largura do teclado. No próprio teclado virtual existem
-						botões “+” e “-” que alteram a largura e a altura em
-						conjunto.
+						botões “+” (mais) e “-” (menos) que alteram a largura e 
+						a altura em conjunto.
 					</p>
 
 					<h4>Altura do fator de zoom (%)</h4>
 					<p>
 						Essa opção permite que você altere individualmente a
 						altura do teclado. No próprio teclado virtual existem
-						botões “+” e “-” que alteram a altura e a largura em
-						conjunto.
+						botões “+” (mais) e “-” (menos) que alteram a altura e 
+						a largura em conjunto.
 					</p>
 				</section>
 				<section id="subtopic6_3">
@@ -1952,13 +1964,13 @@
 						</figure>
 					</div>
 
-					<h4>WebCam:</h4>
+					<h4><span lang="en">WebCam</span></h4>
 					<p>
-						Permite escolher qual webcam será utilizada quando o
+						Permite escolher qual <span lang="en">webcam</span> será utilizada quando o
 						mouse por movimento for ativado.
 					</p>
 
-					<h4>A configuração da área:</h4>
+					<h4>A configuração da área</h4>
 					<p>
 						Você pode selecionar entre ter a calibração da área de
 						foco do movimento automática ou manual. A opção de
@@ -1966,35 +1978,35 @@
 						calibração.
 					</p>
 
-					<h4>Faça a calibração na inicialização do mouse visual:</h4>
+					<h4>Faça a calibração na inicialização do mouse visual</h4>
 					<p>
 						Quando esta opção estiver ativada, quando o mouse por
 						movimento for ativado irá ser iniciado um processo de
 						calibração automaticamente.
 					</p>
 
-					<h4>Sensibilidade horizontal (%):</h4>
+					<h4>Sensibilidade horizontal (%)</h4>
 					<p>
 						Permite que você altere a velocidade do movimento
 						horizontal do mouse quando o movimento é detectado na
 						área de foco.
 					</p>
 
-					<h4>Sensibilidade vertical (%):</h4>
+					<h4>Sensibilidade vertical (%)</h4>
 					<p>
 						Permite que você altere a velocidade do movimento
 						vertical do mouse quando o movimento é detectado na área
 						de foco.
 					</p>
 
-					<h4>Clique automático:</h4>
+					<h4>Clique automático</h4>
 					<p>
 						Quando esta opção for ativada, a ação do clique será
 						realizada quando o cursor do mouse permanecer parado em
 						um mesmo local por alguns segundos.
 					</p>
 
-					<h4>Mostrar grade:</h4>
+					<h4>Mostrar grade</h4>
 					<p>
 						Quando esta opção for ativada, uma grade de 10 por 10
 						será aplicada na tela, ela divide a tela em áreas
@@ -2002,14 +2014,14 @@
 						próprio código.
 					</p>
 
-					<h4>Mostrar visão XY:</h4>
+					<h4>Mostrar visão XY</h4>
 					<p>
 						Quando esta opção for ativada, o cursor se tornará um
 						círculo cortado por uma linha vertical e uma horizontal
 						que se estendem até o fim da tela.
 					</p>
 
-					<h4>Mais opções:</h4>
+					<h4>Mais opções</h4>
 					<p>
 						Clicando em “Mais opções”, outras opções irão aparecer.
 					</p>
@@ -2124,7 +2136,7 @@
 						e o clique será realizado.
 					</p>
 
-					<h4>“Ponteiro segue visão</h4>
+					<h4>Ponteiro segue visão</h4>
 					<p>
 						Quando ativada, permite que o cursor do mouse, que
 						“desaparece” da tela, siga as linhas e quando o mouse XY
@@ -2337,8 +2349,10 @@
 					<h4>Volume (%)</h4>
 					<p>
 						Permite alterar o volume de leitura realizado pelo
-						eSSENTIAL Accessibility comparado com o volume do seu
-						aúdio.
+						<span aria-label="essential"
+							  lang="en">eSSENTIAL</span>
+						<span lang="en">Accessibility</span> comparado 
+						com o volume do seu aúdio.
 					</p>
 
 					<h4>Velocidade de leitura</h4>
@@ -2383,7 +2397,7 @@
 						Caso esteja com uma linguagem compatível e tenha os
 						pacotes de voz baixados, outra informação será exibida.
 						A demonstração abaixo está utilizando a linguagem
-						Inglês/English.
+						Inglês/<span lang="en">English</span>.
 					</p>
 
 					<div class="div-centralizada">
@@ -2399,16 +2413,16 @@
 						</figure>
 					</div>
 
-					<h4>Voice recognition engine</h4>
+					<h4><span lang="en">Voice recognition engine</span></h4>
 					<p>
 						Esta opção permite selecionar qual mecanismo de
 						reconhecimento de voz será utilizado.
 					</p>
 
-					<h4>Show Commands</h4>
+					<h4><span lang="en">Show Commands</span></h4>
 					<p>
-						Abre uma página web contendo os comandos aceitos pelo
-						aplicativo.
+						Abre uma página <span lang="en">web</span> contendo os 
+						comandos aceitos pelo aplicativo.
 					</p>
 
 					<p>
@@ -2577,7 +2591,12 @@
 				<section id="subtopic7_2">
 					<h3>Atalhos</h3>
 
-					<p>Os atalhos aceitos pelo eSSENTIAL Accessibility são:</p>
+					<p>Os atalhos aceitos pelo
+					<span
+						aria-label="essential"
+						lang="en"
+						>eSSENTIAL</span>
+					<span lang="en">Accessibility</span> são:</p>
 
 					<table
 						class="table table-striped table-bordered table-condensed"
@@ -2638,79 +2657,82 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Start XY mouse</td>
+								<td>"<span lang="en">Start XY mouse</span>"</td>
 								<td>Inicia o mouse XY</td>
 							</tr>
 							<tr>
-								<td>Start radar mouse</td>
+								<td>"<span lang="en">Start radar mouse</span>"</td>
 								<td>Inicia o mouse radar</td>
 							</tr>
 							<tr>
-								<td>Start hands-free mouse</td>
+								<td>"<span lang="en">Start hands-free mouse</span>"</td>
 								<td>Inicia o mouse por movimento</td>
 							</tr>
 							<tr>
-								<td>Stop mouse</td>
+								<td>"<span lang="en">Stop mouse</span>"</td>
 								<td>Para o substituto de mouse em uso</td>
 							</tr>
 							<tr>
-								<td>Click</td>
+								<td>"<span lang="en">Click</span>"</td>
 								<td>Realiza um clique</td>
 							</tr>
 							<tr>
-								<td>Enable speech over</td>
+								<td>"<span lang="en">Enable speech over</span>"</td>
 								<td>Habilita leitura de texto do cursor</td>
 							</tr>
 							<tr>
-								<td>Disable speech over</td>
+								<td>"<span lang="en">Disable speech over</span>"</td>
 								<td>Desabilita leitura de texto do cursor</td>
 							</tr>
 							<tr>
-								<td>"Open keyboard" ou "Show keyboard"</td>
+								<td>"<span lang="en">Open keyboard</span>" ou "<span lang="en">Show keyboard</span>"</td>
 								<td>Abre teclado virtual</td>
 							</tr>
 							<tr>
-								<td>"Close keyboard" ou "Hide keyboard"</td>
+								<td>"<span lang="en">Close keyboard</span>" ou "<span lang="en">Hide keyboard</span>"</td>
 								<td>Fecha teclado virtual</td>
 							</tr>
 							<tr>
 								<td>
-									"Open settings" ou "Show settings" ou "Open
-									options" ou "Show options"
+									"<span lang="en">Open settings</span>" ou "<span lang="en">Show settings</span>" 
+									ou "<span lang="en">Open options</span>" ou "<span lang="en">Show options</span>"
 								</td>
 								<td>Abre menu de configurações</td>
 							</tr>
 							<tr>
 								<td>
-									"Close settings" ou "Close options" ou "Hide
-									settings" ou "Hide Options"
+									"<span lang="en">Close settings</span>" ou "<span lang="en">Close options</span>" 
+									ou "<span lang="en">Hide settings</span>" ou "<span lang="en">Hide Options</span>"
 								</td>
 								<td>Fecha menu de configurações</td>
 							</tr>
 							<tr>
 								<td>
-									"Show help" ou "Show user manual" ou "Open
-									help" ou "Open user manual"
+									"<span lang="en">Show help</span>" ou "<span lang="en">Show user manual</span>" 
+									ou "<span lang="en">Open help</span>" ou "<span lang="en">Open user manual</span>"
 								</td>
-								<td>Abre a ajuda online</td>
+								<td>Abre a ajuda online em inglês</td>
 							</tr>
 							<tr>
-								<td>Show voice commands</td>
+								<td>"<span lang="en">Show voice commands</span>"</td>
 								<td>Mostra os comandos de voz disponíveis</td>
 							</tr>
 							<tr>
-								<td>Enable dictation</td>
+								<td>"<span lang="en">Enable dictation</span>"</td>
 								<td>Habilita modo discurso para texto</td>
 							</tr>
 							<tr>
-								<td>Disable dictation</td>
+								<td>"<span lang="en">Disable dictation</span>"</td>
 								<td>Desabilita modo discurso para texto</td>
 							</tr>
 							<tr>
-								<td>"Exit" ou "Exit application"</td>
+								<td>"<span lang="en">Exit</span>" ou "<span lang="en">Exit application</span>"</td>
 								<td>
-									Fecha o "eSSENTIAL accessibility Windows
-									Application"
+									Fecha o "<span
+										aria-label="essential"
+										lang="en"
+										>eSSENTIAL</span
+									>&nbsp;<span lang="en">Accessibility Windows Application</span>".
 								</td>
 							</tr>
 						</tbody>
@@ -2730,24 +2752,24 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>OK</td>
-								<td>Clica no botão de "OK"</td>
+								<td>"<span lang="en">OK</span>"</td>
+								<td>Clica no botão de "<span lang="en">OK</span>"</td>
 							</tr>
 							<tr>
-								<td>Yes</td>
-								<td>Clica no botão de "Yes"</td>
+								<td>"<span lang="en">Yes</span>"</td>
+								<td>Clica no botão de "<span lang="en">Yes</span>"</td>
 							</tr>
 							<tr>
-								<td>No</td>
-								<td>Clica no botão de "No"</td>
+								<td>"<span lang="en">No</span>"</td>
+								<td>Clica no botão de "<span lang="en">No</span>"</td>
 							</tr>
 							<tr>
-								<td>Cancel</td>
-								<td>Clica no botão de "Cancel"</td>
+								<td>"<span lang="en">Cancel</span>"</td>
+								<td>Clica no botão de "<span lang="en">Cancel</span>"</td>
 							</tr>
 							<tr>
-								<td>Close</td>
-								<td>Clica no botão de "Close"</td>
+								<td>"<span lang="en">Close</span>"</td>
+								<td>Clica no botão de "<span lang="en">Close</span>"</td>
 							</tr>
 						</tbody>
 					</table>
@@ -2768,26 +2790,26 @@
 						<tbody>
 							<tr>
 								<td>
-									"Reverse direction" ou "Change direction"
+									"<span lang="en">Reverse direction</span>" ou "<span lang="en">Change direction</span>"
 								</td>
 								<td>Reverte a direção de movimento do mouse</td>
 							</tr>
 							<tr>
-								<td>"Faster" ou "Speed up"</td>
+								<td>"<span lang="en">Faster</span>" ou "<span lang="en">Speed up</span>"</td>
 								<td>Aumenta a velocidade do cursor</td>
 							</tr>
 							<tr>
-								<td>"Slower" ou "Speed down"</td>
+								<td>"<span lang="en">Slower</span>" ou "<span lang="en">Speed down</span>"</td>
 								<td>Diminui a velocidade do cursor</td>
 							</tr>
 							<tr>
-								<td>"High speed" ou "Maximum speed"</td>
+								<td>"<span lang="en">High speed</span>" ou "<span lang="en">Maximum speed</span>"</td>
 								<td>
 									Aumenta a velocidade do cursor para o máximo
 								</td>
 							</tr>
 							<tr>
-								<td>"Low speed" ou "Minimum speed"</td>
+								<td>"<span lang="en">Low speed</span>" ou "<span lang="en">Minimum speed</span>"</td>
 								<td>Diminui velocidade para o mínimo</td>
 							</tr>
 						</tbody>
@@ -2808,77 +2830,78 @@
 						<tbody>
 							<tr>
 								<td>
-									"Reverse direction" ou "Change direction"
+									"<span lang="en">Reverse direction</span>" ou "<span lang="en">Change direction</span>"
 								</td>
 								<td>Reverte a direção de movimento do mouse</td>
 							</tr>
 							<tr>
-								<td>"Faster" ou "Speed up"</td>
+								<td>"<span lang="en">Faster</span>" ou "<span lang="en">Speed up</span>"</td>
 								<td>Aumenta a velocidade do cursor</td>
 							</tr>
 							<tr>
-								<td>"Slower" ou "Speed down"</td>
+								<td>"<span lang="en">Slower</span>" ou "<span lang="en">Speed down</span>"</td>
 								<td>Diminui a velocidade do cursor</td>
 							</tr>
 							<tr>
-								<td>"High speed" ou "Maximum speed"</td>
+								<td>"<span lang="en">High speed</span>" ou "<span lang="en">Maximum speed</span>"</td>
 								<td>
 									Aumenta a velocidade do cursor para o máximo
 								</td>
 							</tr>
 							<tr>
-								<td>"Low speed" ou "Minimum speed"</td>
+								<td>"<span lang="en">Low speed</span>" ou "<span lang="en">Minimum speed</span>"</td>
 								<td>Diminui velocidade para o mínimo</td>
 							</tr>
 							<tr>
-								<td>Move left</td>
+								<td>"<span lang="en">Move left</span>"</td>
 								<td>Cursor começa se mexer para a esquerda</td>
 							</tr>
 							<tr>
-								<td>Move right</td>
+								<td>"<span lang="en">Move right</span>"</td>
 								<td>Cursor começa se mexer para a direita</td>
 							</tr>
 							<tr>
-								<td>Move up</td>
+								<td>"<span lang="en">Move up</span>"</td>
 								<td>Cursor começa se mexer para cima</td>
 							</tr>
 							<tr>
-								<td>Move down</td>
+								<td>"<span lang="en">Move down</span>"</td>
 								<td>Cursor começa se mexer para baixo</td>
 							</tr>
 							<tr>
-								<td>"Go to A1", "Go to A2" ... "Go to J10"</td>
+								<td>"<span lang="en">Go to A1</span>", "<span lang="en">Go to A2</span>" 
+									... "<span lang="en">Go to J10</span>"</td>
 								<td>
 									O cursor vai para a posição da grade
 									definida
 								</td>
 							</tr>
 							<tr>
-								<td>"Stop" ou "Stop moving"</td>
+								<td>"<span lang="en">Stop</span>" ou "<span lang="en">Stop moving</span>"</td>
 								<td>Para de mover o cursor</td>
 							</tr>
 							<tr>
-								<td>Show grid</td>
+								<td>"<span lang="en">Show grid</span>"</td>
 								<td>Mostra grade de posições do mouse</td>
 							</tr>
 							<tr>
-								<td>"Show labels" ou "Show grid labels"</td>
+								<td>"<span lang="en">Show labels</span>" ou "<span lang="en">Show grid labels</span>"</td>
 								<td>
 									Mostra a nomenclatura das grade de posição
 								</td>
 							</tr>
 							<tr>
-								<td>Hide grid</td>
+								<td>"<span lang="en">Hide grid</span>"</td>
 								<td>Esconde a grade de posição do mouse</td>
 							</tr>
 							<tr>
-								<td>Show cross bars</td>
+								<td>"<span lang="en">Show cross bars</span>"</td>
 								<td>
 									Mostram as barras XY que seguem o cursor
 								</td>
 							</tr>
 							<tr>
-								<td>Hide cross bars</td>
+								<td>"<span lang="en">Hide cross bars</span>"</td>
 								<td>
 									Escondem as barras de XY que seguem o cursor
 								</td>
@@ -2901,46 +2924,47 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Webcam calibration</td>
-								<td>Abre a calibração por WebCam</td>
+								<td>"<span lang="en">Webcam calibration</span>"</td>
+								<td>Abre a calibração por <span lang="en">WebCam</span></td>
 							</tr>
 							<tr>
-								<td>Go to A</td>
+								<td>"<span lang="en">Go to A</span>"</td>
 								<td>Leva o cursor para a posição A da grade</td>
 							</tr>
 							<tr>
-								<td>"Go to A1", "Go to A2" ... "Go to J10"</td>
+								<td>"<span lang="en">Go to A1</span>", "<span lang="en">Go to A2</span>" 
+									... "<span lang="en">Go to J10</span>"</td>
 								<td>
 									O cursor vai para a posição da grade
 									definida
 								</td>
 							</tr>
 							<tr>
-								<td>"Stop" ou "Stop moving"</td>
+								<td>"<span lang="en">Stop</span>" ou "<span lang="en">Stop moving</span>"</td>
 								<td>Para de mover o cursor</td>
 							</tr>
 							<tr>
-								<td>Show grid</td>
+								<td>"<span lang="en">Show grid</span>"</td>
 								<td>Mostra grade de posições do mouse</td>
 							</tr>
 							<tr>
-								<td>"Show labels" ou "Show grid labels"</td>
+								<td>"<span lang="en">Show labels</span>" ou "<span lang="en">Show grid labels</span>"</td>
 								<td>
 									Mostra a nomenclatura das grade de posição
 								</td>
 							</tr>
 							<tr>
-								<td>Hide grid</td>
+								<td>"<span lang="en">Hide grid</span>"</td>
 								<td>Esconde a grade de posição do mouse</td>
 							</tr>
 							<tr>
-								<td>Show cross bars</td>
+								<td>"<span lang="en">Show cross bars</span>"</td>
 								<td>
 									Mostram as barras XY que seguem o cursor
 								</td>
 							</tr>
 							<tr>
-								<td>Hide cross bars</td>
+								<td>"<span lang="en">Hide cross bars</span>"</td>
 								<td>
 									Escondem as barras de XY que seguem o cursor
 								</td>
@@ -2962,27 +2986,27 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Select left click</td>
+								<td>"<span lang="en">Select left click</span>"</td>
 								<td>Seleciona a ação de clique esquerdo</td>
 							</tr>
 							<tr>
-								<td>Select right click</td>
+								<td>"<span lang="en">Select right click</span>"</td>
 								<td>Seleciona a ação de clique direito</td>
 							</tr>
 							<tr>
-								<td>Select double click</td>
+								<td>"<span lang="en">Select double click</span>"</td>
 								<td>Seleciona a ação de clique duplo</td>
 							</tr>
 							<tr>
-								<td>Select drag and drop</td>
+								<td>"<span lang="en">Select drag and drop</span>"</td>
 								<td>Seleciona a ação de arrastar e soltar</td>
 							</tr>
 							<tr>
-								<td>Pause autoclick</td>
+								<td>"<span lang="en">Pause autoclick</span>"</td>
 								<td>Pausa o clique automático</td>
 							</tr>
 							<tr>
-								<td>Resume autoclick</td>
+								<td>"<span lang="en">Resume autoclick</span>"</td>
 								<td>Reativa o clique automático</td>
 							</tr>
 						</tbody>
@@ -3002,20 +3026,20 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>"Press A", ..., "Press Z"</td>
+								<td>"<span lang="en">Press A</span>", ..., "<span lang="en">Press Z</span>"</td>
 								<td>
 									Pressiona a tecla de letra do teclado
 									virtual
 								</td>
 							</tr>
 							<tr>
-								<td>"Press number 0", ..., "Press number 9"</td>
+								<td>"<span lang="en">Press number 0</span>", ..., "<span lang="en">Press number 9</span>"</td>
 								<td>Pressiona tecla de número</td>
 							</tr>
 							<tr>
 								<td>
-									"Press first prediction", ..., "Press fifth
-									prediction"
+									"<span lang="en">Press first prediction</span>", ..., 
+									"<span lang="en">Press fifth prediction</span>"
 								</td>
 								<td>
 									Seleciona uma das opções da primeira a
@@ -3024,48 +3048,77 @@
 							</tr>
 							<tr>
 								<td>
-									Press "nome da tecla como a ferramenta de
-									leitura de texto do mouse fala", ex. "Press
-									Enter"
+									"<span lang="en">Press</span> 'nome da tecla como a ferramenta de
+									leitura de texto do mouse fala'", exemplo: 
+									"<span lang="en">Press Enter</span>"
 								</td>
 								<td>
 									Pressiona todas as outras teclas do teclado
-									virtual, no exemplo pressiona a tecla Enter
+									virtual, no exemplo pressiona a tecla <span lang="en">Enter</span>
 								</td>
 							</tr>
 							<tr>
-								<td>Increase keyboard size</td>
+								<td>"<span lang="en">Increase keyboard size</span>"</td>
 								<td>Aumenta o tamanho do teclado virtual</td>
 							</tr>
 							<tr>
-								<td>Decrease keyboard size</td>
+								<td>"<span lang="en">Decrease keyboard size</span>"</td>
 								<td>Diminui o tamanho do teclado virtual</td>
 							</tr>
 						</tbody>
 					</table>
 				</section>
+				<button
+					onclick="location.href='#sumario'"
+					class="back-sumario-btn"
+				>
+					voltar ao sumário
+				</button>
 			</article>
-			<button
-				onclick="location.href='#sumario'"
-				class="back-sumario-btn"
-			>
-				voltar ao sumário
-			</button>
+			
 		</main>
+		
+		
+		<section class="informacoes-projeto">
+			<h2> Sobre o trabalho</h2>
+			<p>
+				Este trabalho foi desenvolvido como atividade de extensão para a disciplina de Acessibilidade e Inclusão Digital ministrada na UTFPR, câmpus Curitiba no segundo semestre de 2023.
+			</p>
+			
+			<h3>Equipe Executora</h3>
+			<ul>
+				<li>
+					André Otavio Pedrofeza de Oliveira
+				</li>
+				<li>
+					Camila Vieira Figueiredo
+				</li>
+				<li>
+					Lucas Amaral
+				</li>
+				<li>
+					Miguel Ferreira Chagas Neto
+				</li>
+				<li>
+					Yan Pietrzak Pinheiro
+				</li>
+			</ul>
+			
+			<h3>
+				Coordenador
+			</h3>
+			<p>
+				Leonelo Dell Anhol Almeida
+			</p>
 
-		<div id="image-viewer">
-			<span class="close">&times;</span>
-			<img
-				class="modal-content"
-				id="full-image"
-			/>
-		</div>
+		</section>
+		
 		<footer class="footer">
 			<p xmlns:cc="http://creativecommons.org/ns#">
 				This work is licensed under
-
+				
 				<a
-					href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+				href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
 					target="_blank"
 					rel="license noopener noreferrer"
 					style="display: inline-block"
@@ -3098,6 +3151,15 @@
 				/></a>
 			</p>
 		</footer>
+
+		<div id="image-viewer">
+			<span class="close">&times;</span>
+			<img
+				class="modal-content"
+				id="full-image"
+			/>
+		</div>
+		
 		<button
 			onclick="topFunction()"
 			id="btnTopo"
@@ -3106,6 +3168,7 @@
 		>
 			Voltar ao topo
 		</button>
+
 		<script>
 			// SUMÁRIO EXPANDIR/RETRAIR
 			var alturaMaxima;

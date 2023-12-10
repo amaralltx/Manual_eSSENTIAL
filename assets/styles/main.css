@@ -19,12 +19,17 @@ header {
 h2, a {
 	color: #1c518a;
 }
-h2 {
-	margin-top: 60px;
+
+h3 {
+	color: rgb(45, 52, 59);
 }
 
 a:hover {
 	color: #000;
+}
+
+article {
+	margin-bottom: 60px;
 }
 
 .div-centralizada {
@@ -191,6 +196,12 @@ figcaption {
 	margin: 20px;
 }
 
+.informacoes-projeto{
+	background-color: #f8f9fa;
+	border: 1px solid #dee2e6;
+	padding: 2em 3em;
+
+}
 .footer {
 	text-align: center;
 	padding: 12px;
@@ -208,6 +219,7 @@ figcaption {
 .footer a:hover {
 	color: #deeeff;
 }
+
 
 @media (max-width: 768px) {
 	#menu {
